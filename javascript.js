@@ -8,3 +8,9 @@ startscreen.style.height = window.innerHeight + 'px';
 ajustement()
 
 window.addEventListener("resize",ajustement);
+
+function enleverstartscren()
+{
+startscreen.style.display = "none"
+}
+startscreen.addEventListener('click',enleverstartscren)
