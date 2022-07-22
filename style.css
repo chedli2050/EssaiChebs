@@ -93,7 +93,7 @@ body{margin: 0%;padding: 0%;}
     .menu2
        {
            position: absolute;top: 0px;left: 0px;
-           width: 35%;height: 60px;background-color: black;font-family: Arial;
+           width: 45%;height: 60px;background-color: black;font-family: Arial;
            display: flex;justify-content: flex-start ;align-items: flex-start;flex-direction: column;
            z-index: 10000003;transition: 0.5s;user-select: none;
        }
@@ -115,8 +115,6 @@ body{margin: 0%;padding: 0%;}
         #flyersbtm:hover{text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.773);}
         #portedocbtm{color: white; font-size : 14pt;margin-left: 15px;margin-top: 22px;}
         #portedocbtm:hover{text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.773);}
-
-
 
 
 }
