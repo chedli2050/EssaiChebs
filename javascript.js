@@ -20,3 +20,11 @@ boxsommaire.style.display = "flex";
 startscreen.addEventListener('click',enleverstartscren)
 
 // Fin Start Screen
+var logobarrehaut = document.getElementById('logobarrehaut');
+var menu = document.getElementById('menu');
+function retirermenu(){
+   if(menu.className=="menu0"){menu.className="menu1"}
+   else{menu.className="menu0"}
+    
+}
+logobarrehaut.addEventListener('click',retirermenu);
