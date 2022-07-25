@@ -29,6 +29,7 @@ function retirermenu(){
 }
 logobarrehaut.addEventListener('click',retirermenu);
 
+
 var d = new Date();
 
     var annee = d.getFullYear();
@@ -54,11 +55,32 @@ else if (mois == 11){moisl="Novembre"}
 else if (mois == 12){moisl="Décembre"};
 
 
-
-
-
 var ladate = document.getElementById('ladate');
 ladate.innerHTML =  jour + " " + moisl + " " + annee;
+
+
+var menu2 = document.getElementById('menu2');
+
+
+function deroulementmenumobile(){
+if (menu2.className == "menu20")
+{   
+    menu2.className = "menu21"
+    menu2.style.width = "fit-content"
+    menu2.style.height ="380px"
+    menu2.style.boxShadow = "1px 1px 7px rgba(255, 255, 255, 0.623)"
+    
+}
+else
+{
+    menu2.className ="menu20"
+   menu2.style.width = "35%"
+    menu2.style.height ="60px"
+    menu2.style.boxShadow = "1px 1px 8px rgba(255, 255, 255, 0)"
+};}
+menu2.addEventListener('click',deroulementmenumobile);
+
+
 
 var boxblocbt = document.getElementById('boxblocbt');
 var boxlivresbt = document.getElementById('boxlivresbt');
