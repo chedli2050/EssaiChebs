@@ -145,21 +145,28 @@ body{margin: 0%;padding: 0%;}
             display: flex;justify-content: center;flex-wrap: wrap;align-content:  center;flex-direction: column;
             color: white;font-size: 16pt;font-weight: bold;font-family: Arial, Helvetica, sans-serif;}
 
-            .photobn{width: 300px; height: 150px;transition: 3s;}
+            #boxblocbt:hover{background-color: rgba(255, 255, 255, 0.384);box-shadow: 0px 0px 10px gray;}
+            
             
         #boxlivresbt{background-color:rgba(255, 255, 255, 0.224);
             display: flex;justify-content: center;flex-wrap: wrap;align-content:  center;
             color: white;font-size: 16pt;font-weight: bold;font-family: Arial, Helvetica, sans-serif;}
+            #boxlivresbt:hover{background-color: rgba(255, 255, 255, 0.384);box-shadow: 0px 0px 10px gray;}
+
         #boxflyersbt{background-color: rgba(255, 255, 255, 0.224);
             display: flex;justify-content: center;flex-wrap: wrap;align-content:  center;
             color: white;font-size: 16pt;font-weight: bold;font-family: Arial, Helvetica, sans-serif;}
+            #boxflyersbt:hover{background-color: rgba(255, 255, 255, 0.384);box-shadow: 0px 0px 10px gray;}
+
         #boxportedocbt{background-color:rgba(255, 255, 255, 0.224);
             display: flex;justify-content: center;flex-wrap: wrap;align-content:  center;
             color: white;font-size: 16pt;font-weight: bold;font-family: Arial, Helvetica, sans-serif;}
+            #boxportedocbt:hover{background-color: rgba(255, 255, 255, 0.384);box-shadow: 0px 0px 10px gray;}
+            
 
 
 
-
+            .photobn{width: 300px; height: 150px;}
 
 
 
