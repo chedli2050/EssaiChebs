@@ -4,9 +4,10 @@ body{margin: 0%;padding: 0%;}
 /*Start Screen*/
 
 #startscreen{background-color: white;
-             display: flex;justify-content: center;position: absolute;
+             display: flex;justify-content: center;flex-wrap: wrap;align-content:  center;
+             position: absolute;
             z-index: 10000004;
-            flex-wrap: wrap;align-content:  center;
+            
             }
     .logobaya
             {
@@ -61,9 +62,11 @@ body{margin: 0%;padding: 0%;}
                         100% {color: rgb(128, 128, 128);}
                 }
     
-     /* Fin Start Screen*/
+     /* --------------------------------Fin Start Screen---------------------------------------------------*/
+
 
      /*Menu*/
+    body{background-image: url(photos/back.png);background-repeat: no-repeat;background-size: cover;}
     #barrehaut {
         position: fixed;top: 0;left: 0;background-color: black;
         width:100%; height: 40px;display: flex;justify-content: flex-start;align-items: center;
@@ -114,6 +117,9 @@ body{margin: 0%;padding: 0%;}
         #parametragebt:hover{border-bottom: 5px solid rgb(255, 0, 0);font-weight: bold;
             text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.479);background-color:rgba(128, 128, 128, 0.379);}
 
+        #ladate{font-size: 14pt;font-weight: bold;color: grey;display: block; position: absolute; right: 15px; top: 10px;}
+
+
 
 
         #titremobile{color: white; font-weight: bolder;font-family: Arial;
@@ -121,6 +127,8 @@ body{margin: 0%;padding: 0%;}
             position: fixed;top: 20px;left: 20px;user-select: none;
             z-index: 10000002;display: none;
            }
+        /*Fin Menu*/
+
 
 /* Box sommaire */
 
@@ -130,15 +138,34 @@ body{margin: 0%;padding: 0%;}
             margin-top: 40px;
             display: none;    
         }
-        .boxsdusommaire{width: 48%;height: 300px;}
-        #boxblocbt{background-color: rgb(54, 80, 210);}
-        #boxlivresbt{background-color: rgb(210, 54, 189);}
-        #boxflyersbt{background-color: rgb(161, 240, 97);}
-        #boxportedocbt{background-color: rgb(224, 158, 67);}
+        .boxsdusommaire{width: 48%;height: 300px;
+                        border-radius: 20px;
+                        }
+        #boxblocbt{background-color: rgba(255, 255, 255, 0.224);
+            display: flex;justify-content: center;flex-wrap: wrap;align-content:  center;
+            color: white;font-size: 16pt;font-weight: bold;font-family: Arial, Helvetica, sans-serif;}
+        #boxlivresbt{background-color:rgba(255, 255, 255, 0.224);
+            display: flex;justify-content: center;flex-wrap: wrap;align-content:  center;
+            color: white;font-size: 16pt;font-weight: bold;font-family: Arial, Helvetica, sans-serif;}
+        #boxflyersbt{background-color: rgba(255, 255, 255, 0.224);
+            display: flex;justify-content: center;flex-wrap: wrap;align-content:  center;
+            color: white;font-size: 16pt;font-weight: bold;font-family: Arial, Helvetica, sans-serif;}
+        #boxportedocbt{background-color:rgba(255, 255, 255, 0.224);
+            display: flex;justify-content: center;flex-wrap: wrap;align-content:  center;
+            color: white;font-size: 16pt;font-weight: bold;font-family: Arial, Helvetica, sans-serif;}
 
 
 
-/* ----------------------------------------- code responsive------------------------------ */
+
+
+
+
+
+
+/* ----------------------------------------- code responsive------------------------------------------------------- */
+/* ----------------------------------------- code responsive------------------------------------------------------- */
+/* ----------------------------------------- code responsive------------------------------------------------------- */
+/* ----------------------------------------- code responsive------------------------------------------------------- */
 
 
 @media screen and (min-width : 721px) and (max-width : 1080px)
@@ -195,6 +222,7 @@ body{margin: 0%;padding: 0%;}
             text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.479);background-color:rgba(128, 128, 128, 0.379);}
 
 
+        #ladate{display: none;}
 
 
 }
@@ -253,7 +281,12 @@ body{margin: 0%;padding: 0%;}
             font-size : 14pt;margin-left: 15px;border-left: 5px solid rgba(255, 0, 0, 0);
             padding-left: 10px;padding-top: 12px;}
         #parametragebtm:hover{text-shadow: 0px 0px 5px white;border-left: 5px solid red;}
-        
+    
+        #ladate{font-size: 14pt;font-weight: bold;color: grey;display: block; position: absolute; right: 15px; top: 22px;}
+
+
+
+
     #boxsommaire
     {
         display: none;flex-wrap: wrap;
@@ -261,9 +294,9 @@ body{margin: 0%;padding: 0%;}
         margin-top:70px;justify-content: space-around;align-content: space-around;
     }
         .boxsdusommaire{width: 98%;height: 300px;}
-        #boxblocbt{background-color: rgb(54, 80, 210);}
-        #boxlivresbt{background-color: rgb(210, 54, 189);}
-        #boxflyersbt{background-color: rgb(161, 240, 97);}
-        #boxportedocbt{background-color: rgb(224, 158, 67);}
+        #boxblocbt{background-color:  rgba(255, 255, 255, 0.224);}
+        #boxlivresbt{background-color: rgba(255, 255, 255, 0.224);}
+        #boxflyersbt{background-color:  rgba(255, 255, 255, 0.224);}
+        #boxportedocbt{background-color:  rgba(255, 255, 255, 0.224);}
 
 }
