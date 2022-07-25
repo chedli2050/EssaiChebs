@@ -68,7 +68,7 @@ if (menu2.className == "menu20")
     menu2.className = "menu21"
     menu2.style.width = "fit-content"
     menu2.style.height ="380px"
-    menu2.style.boxShadow = "1px 1px 7px rgba(255, 255, 255, 0.623)"
+    menu2.style.boxShadow = "1px 1px 7px rgba(255, 255, 255, 0.423)"
     
 }
 else
