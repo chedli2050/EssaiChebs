@@ -29,7 +29,7 @@ function retirermenu(){
 }
 logobarrehaut.addEventListener('click',retirermenu);
 
-
+//incrementation Date
 var d = new Date();
 
     var annee = d.getFullYear();
@@ -58,7 +58,10 @@ else if (mois == 12){moisl="Décembre"};
 var ladate = document.getElementById('ladate');
 ladate.innerHTML =  jour + " " + moisl + " " + annee;
 
+//Fin incrementation Date
 
+
+// Menu Mobile deroulement
 var menu2 = document.getElementById('menu2');
 
 
@@ -80,6 +83,7 @@ else
 };}
 menu2.addEventListener('click',deroulementmenumobile);
 
+// Fin Menu Mobile deroulement
 
 
 var boxblocbt = document.getElementById('boxblocbt');
@@ -87,8 +91,104 @@ var boxlivresbt = document.getElementById('boxlivresbt');
 var boxflyersbt = document.getElementById('boxflyersbt');
 var boxportedocbt = document.getElementById('boxportedocbt');
 
-function essai(){alert('oooooooooooooo')};
-boxblocbt.addEventListener('click',essai);
-boxlivresbt.addEventListener('click',essai);
-boxflyersbt.addEventListener('click',essai);
-boxportedocbt.addEventListener('click',essai);
+var boxblocnotes = document.getElementById('boxblocnotes');
+var boxlivres = document.getElementById('boxlivres');
+var boxflyers = document.getElementById('boxflyers');
+var boxporte = document.getElementById('boxporte');
+var boxparametrage = document.getElementById('boxparametrage');
+
+
+function ouvrirsommaire()
+{
+boxsommaire.className = "boxsommaire1"
+boxblocnotes.className = "boxblocnotes0"
+boxlivres.className = "boxlivres0"
+boxflyers.className = "boxflyers0"
+boxporte.className = "boxporte0"
+boxparametrage.className = "boxparametrage0"
+}
+
+
+function ouvrirblocnotes()
+{
+boxsommaire.className = "boxsommaire0"
+boxblocnotes.className = "boxblocnotes1"
+boxlivres.className = "boxlivres0"
+boxflyers.className = "boxflyers0"
+boxporte.className = "boxporte0"
+boxparametrage.className = "boxparametrage0"
+}
+
+function ouvrirlivres()
+{
+boxsommaire.className = "boxsommaire0"
+boxblocnotes.className = "boxblocnotes0"
+boxlivres.className = "boxlivres1"
+boxflyers.className = "boxflyers0"
+boxporte.className = "boxporte0"
+boxparametrage.className = "boxparametrage0"
+}
+
+function ouvrirflyers()
+{
+boxsommaire.className = "boxsommaire0"
+boxblocnotes.className = "boxblocnotes0"
+boxlivres.className = "boxlivres0"
+boxflyers.className = "boxflyers1"
+boxporte.className = "boxporte0"
+boxparametrage.className = "boxparametrage0"
+}
+
+function ouvrirporte()
+{
+boxsommaire.className = "boxsommaire0"
+boxblocnotes.className = "boxblocnotes0"
+boxlivres.className = "boxlivres0"
+boxflyers.className = "boxflyers0"
+boxporte.className = "boxporte1"
+boxparametrage.className = "boxparametrage0"
+}
+
+function ouvrirparametrage()
+{
+boxsommaire.className = "boxsommaire0"
+boxblocnotes.className = "boxblocnotes0"
+boxlivres.className = "boxlivres0"
+boxflyers.className = "boxflyers0"
+boxporte.className = "boxporte0"
+boxparametrage.className = "boxparametrage1"
+}
+
+
+boxblocbt.addEventListener('click',ouvrirblocnotes);
+boxlivresbt.addEventListener('click',ouvrirlivres);
+boxflyersbt.addEventListener('click',ouvrirflyers);
+boxportedocbt.addEventListener('click',ouvrirporte);
+
+var sommairebt = document.getElementById('sommairebt');
+var blocbt = document.getElementById('blocbt');
+var livresbt = document.getElementById('livresbt');
+var flyersbt = document.getElementById('flyersbt');
+var portedocbt = document.getElementById('portedocbt');
+var parametragebt = document.getElementById('parametragebt');
+
+sommairebt.addEventListener('click',ouvrirsommaire);
+blocbt.addEventListener('click',ouvrirblocnotes);
+livresbt.addEventListener('click',ouvrirlivres);
+flyersbt.addEventListener('click',ouvrirflyers);
+portedocbt.addEventListener('click',ouvrirporte);
+parametragebt.addEventListener('click',ouvrirparametrage);
+
+var sommairebtm = document.getElementById('sommairebtm');
+var blocbtm = document.getElementById('blocbtm');
+var livresbtm = document.getElementById('livresbtm');
+var flyersbtm = document.getElementById('flyersbtm');
+var portedocbtm = document.getElementById('portedocbtm');
+var parametragebtm = document.getElementById('parametragebtm');
+
+sommairebtm.addEventListener('click',ouvrirsommaire);
+blocbtm.addEventListener('click',ouvrirblocnotes);
+livresbtm.addEventListener('click',ouvrirlivres);
+flyersbtm.addEventListener('click',ouvrirflyers);
+portedocbtm.addEventListener('click',ouvrirporte);
+parametragebtm.addEventListener('click',ouvrirparametrage);
