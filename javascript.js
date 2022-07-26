@@ -65,7 +65,8 @@ ladate.innerHTML =  jour + " " + moisl + " " + annee;
 var menu2 = document.getElementById('menu2');
 
 
-function deroulementmenumobile(){
+function deroulementmenumobile()
+{
 if (menu2.className == "menu20")
 {   
     menu2.className = "menu21"
@@ -80,9 +81,24 @@ else
    menu2.style.width = "35%"
     menu2.style.height ="60px"
     menu2.style.boxShadow = "1px 1px 8px rgba(255, 255, 255, 0)"
-};}
+};
+}
+
+function deroulementmenumobileleave()
+{
+if (menu2.className == "menu21")
+{   
+    menu2.className ="menu20"
+   menu2.style.width = "35%"
+    menu2.style.height ="60px"
+    menu2.style.boxShadow = "1px 1px 8px rgba(255, 255, 255, 0)"
+    
+};
+
+}
+
 menu2.addEventListener('mouseup',deroulementmenumobile);
-menu2.addEventListener('mouseleave',deroulementmenumobile);
+menu2.addEventListener('mouseleave',deroulementmenumobileleave);
 
 
 // Fin Menu Mobile deroulement
