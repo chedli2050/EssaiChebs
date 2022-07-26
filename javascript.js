@@ -104,6 +104,8 @@ menu2.addEventListener('mouseleave',deroulementmenumobileleave);
 // Fin Menu Mobile deroulement
 
 
+//ouverture des fenetres Boxes...
+
 var boxblocbt = document.getElementById('boxblocbt');
 var boxlivresbt = document.getElementById('boxlivresbt');
 var boxflyersbt = document.getElementById('boxflyersbt');
@@ -210,3 +212,57 @@ livresbtm.addEventListener('click',ouvrirlivres);
 flyersbtm.addEventListener('click',ouvrirflyers);
 portedocbtm.addEventListener('click',ouvrirporte);
 parametragebtm.addEventListener('click',ouvrirparametrage);
+//Fin ouverture des fenetres Boxes...
+
+
+//---------------------------------------Devis bloc notes------------------------------------
+
+//contre de la saisie du champ qnb1 et qnb2 pour empecher les signes + - , . 
+        let hj0 = document.getElementById('qnb1');
+        var hj0val = 0;
+        var controleQ = 0;
+        
+        hj0.addEventListener('keydown',(e)=>    //Saisie quantité bloc note
+        {
+        if(e.key == '-' || e.key == '+' || e.key == '.' || e.key == ','){hj0val=hj0.value;}            
+        });
+        hj0.addEventListener('keyup',(e)=>
+        {
+        if(e.key == '-' || e.key == '+' || e.key == '.' || e.key == ','){hj0.value=hj0val;}           
+        });
+
+        hj0.addEventListener('keyup',(e)=>
+        {
+            controleQ=hj0.value;
+            if(controleQ > 100000) {hj0.value='100000';}     
+            if(controleQ == '') {hj0.value='';} 
+            if(controleQ == 0) {hj0.value='1';}
+            controleQ=0;        
+        });
+
+   
+        let hj = document.getElementById('qnb2');
+        var hjval = 0;
+        
+        hj.addEventListener('keydown',(e)=> //Saisie volume bloc note
+        {
+        if(e.key == '-' || e.key == '+' || e.key == '.' || e.key == ','){hjval=hj.value;}            
+        });
+        hj.addEventListener('keyup',(e)=>
+        {
+        if(e.key == '-' || e.key == '+' || e.key == '.' || e.key == ','){hj.value=hjval;}              
+        });
+       
+        hj.addEventListener('keyup',(e)=>
+        {
+            controleQ=hj.value;
+            if(controleQ > 250) {hj.value='250';}  
+            if(controleQ == '') {hj.value='';}    
+            if(controleQ == 0) {hj.value='1';}
+            controleQ=0;        
+        });
+
+
+//Fin contre de la saisie du champ qnb2 pour empecher les signes + - , .        
+
+//---------------------------------------Fin Devis bloc notes------------------------------------
