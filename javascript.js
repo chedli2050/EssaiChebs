@@ -81,7 +81,8 @@ else
     menu2.style.height ="60px"
     menu2.style.boxShadow = "1px 1px 8px rgba(255, 255, 255, 0)"
 };}
-menu2.addEventListener('click',deroulementmenumobile);
+menu2.addEventListener('mouseover',deroulementmenumobile);
+menu2.addEventListener('mouseout',deroulementmenumobile);
 
 // Fin Menu Mobile deroulement
 
