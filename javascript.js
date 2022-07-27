@@ -181,6 +181,7 @@ boxparametrage.className = "boxparametrage1"
 
 
 boxblocbt.addEventListener('click',ouvrirblocnotes);
+boxblocbt.addEventListener('click',resultatbn);
 boxlivresbt.addEventListener('click',ouvrirlivres);
 boxflyersbt.addEventListener('click',ouvrirflyers);
 boxportedocbt.addEventListener('click',ouvrirporte);
@@ -194,6 +195,7 @@ var parametragebt = document.getElementById('parametragebt');
 
 sommairebt.addEventListener('click',ouvrirsommaire);
 blocbt.addEventListener('click',ouvrirblocnotes);
+blocbt.addEventListener('click',resultatbn);
 livresbt.addEventListener('click',ouvrirlivres);
 flyersbt.addEventListener('click',ouvrirflyers);
 portedocbt.addEventListener('click',ouvrirporte);
@@ -208,6 +210,7 @@ var parametragebtm = document.getElementById('parametragebtm');
 
 sommairebtm.addEventListener('click',ouvrirsommaire);
 blocbtm.addEventListener('click',ouvrirblocnotes);
+blocbtm.addEventListener('click',resultatbn);
 livresbtm.addEventListener('click',ouvrirlivres);
 flyersbtm.addEventListener('click',ouvrirflyers);
 portedocbtm.addEventListener('click',ouvrirporte);
@@ -216,6 +219,7 @@ parametragebtm.addEventListener('click',ouvrirparametrage);
 
 
 //---------------------------------------Devis bloc notes------------------------------------
+
 
 //contre de la saisie du champ qnb1 et qnb2 pour empecher les signes + - , . 
         let hj0 = document.getElementById('qnb1');
@@ -235,8 +239,6 @@ parametragebtm.addEventListener('click',ouvrirparametrage);
         {
             controleQ=hj0.value;
             if(controleQ > 100000) {hj0.value='100000';}     
-            if(controleQ == '') {hj0.value='';} 
-            if(controleQ == 0) {hj0.value='1';}
             controleQ=0;        
         });
 
@@ -257,12 +259,320 @@ parametragebtm.addEventListener('click',ouvrirparametrage);
         {
             controleQ=hj.value;
             if(controleQ > 250) {hj.value='250';}  
-            if(controleQ == '') {hj.value='';}    
-            if(controleQ == 0) {hj.value='1';}
             controleQ=0;        
         });
 
 
 //Fin contre de la saisie du champ qnb2 pour empecher les signes + - , .        
+
+
+
+
+function formaterbn(v){return Intl.NumberFormat('fr-FR',{ maximumFractionDigits : 2 }).format(v);}
+          
+
+var formatbn = "";
+var formatcouvbn = "";
+var feuillea0 = document.getElementById('feuillea0');
+var feuillea3 = document.getElementById('feuillea3');
+var feuillea4 = document.getElementById('feuillea4');
+
+
+var qbnF = document.getElementById("qbnF");
+var coutunitaireP = document.getElementById("coutunitaireP");
+var couttotalP = document.getElementById("couttotalP");
+var coutimpint = document.getElementById("coutimpint");
+var coutimpintunitaire = document.getElementById("coutimpintunitaire");
+
+var coutimpcouvunitaire = document.getElementById('coutimpcouvunitaire');
+var coutimpcouv = document.getElementById('coutimpcouv');
+
+var pellcouvunitaire = document.getElementById('pellcouvunitaire');
+var pellcouv = document.getElementById('pellcouv');
+
+
+
+var reliureunitaire = document.getElementById('reliureunitaire');
+var reliure = document.getElementById('reliure');
+
+var prixunitaire = document.getElementById('prixunitaire');
+var prixtotal = document.getElementById('prixtotal');
+function formater(g){return Intl.NumberFormat('fr-FR',{style:"currency",currency : 'TND'}).format(g);}
+
+
+function resultatbn(){
+        const checkBox = document.getElementById('A5').checked;
+
+        var qnb1 = document.getElementById('qnb1').value;
+        var qnb2 = document.getElementById('qnb2').value;
+        var qbn0 = 0;
+        var volbn0 = 0;
+        var rtblocnotes = 0;
+
+        var prixpapierint = 0;
+        var prixpapiercouv = 0;
+        var prixpapiertotal = 0;
+        var prixpapierunitaire = 0;
+
+        var prixt=0;
+        var prixu = 0;
+
+       
+
+        qbn0 = qnb1;
+        volbn0 = qnb2;
+        rtblocnotes = qbn0 * volbn0;
+        if (qbn0 != ""){qbnF.innerHTML= Intl.NumberFormat().format(qnb1)} else {qbnF.innerHTML="0"};
+
+        if (checkBox === true) {formatbn= "A5";} // formatphotobn.className = "formatphotobn0" 
+        else{formatbn = "A4";}  // formatphotobn.className = "formatphotobn1"  
+        
+        var xxreliure = 0;
+
+        const checkBox2 = document.getElementById('dos').checked;  
+        if (checkBox2 === true) 
+        {
+            if (formatbn == "A5")
+            {
+            formatcouvbn = "A4+"
+            xxreliure = qbn0 * 0.25
+            }
+            else{formatcouvbn = "A3+"
+                xxreliure = qbn0 * 0.35
+                }
+        }
+
+        const spirale = document.getElementById('spirale').checked;
+
+        if (spirale === true)
+        {
+            if (formatbn == "A5") {xxreliure = qbn0 * 0.45}
+            else {xxreliure = qbn0 * 0.55}
+
+        }
+
+        const spiralehaut = document.getElementById('spiralehaut').checked;
+        if (spiralehaut === true)
+        {
+            if (formatbn == "A5") {xxreliure = qbn0 * 0.35}
+            else {xxreliure = qbn0 * 0.45}
+        
+        }
+
+
+
+
+
+
+
+
+        var xxint = 0; //prix passage int
+        var impressionint = document.getElementById('impressionint').value;
+
+        var priximpint = 0;
+        var priximpintunitaire = 0;
+        
+        
+
+        if(impressionint === '1'){xxint = 0.04};
+        if(impressionint === '2'){xxint = 0.07};
+        if(impressionint === '3'){xxint = 0.17};
+        if(impressionint === '4'){xxint = 0.3};
+        if(rtblocnotes != 0){
+        if(impressionint === '5'){xxint = (32/rtblocnotes)+0.01};
+                            }
+        if(rtblocnotes != 0){
+            if(impressionint === '6'){xxint = (32/rtblocnotes)+0.02};
+                            }       
+        if(rtblocnotes != 0){
+            if(impressionint === '7'){xxint = (140/rtblocnotes)+0.04};
+                            }    
+        if(rtblocnotes != 0){
+            if(impressionint === '8'){xxint = (140/rtblocnotes)+0.08};
+                            }                       
+        
+        var xxcouv = 0; //prix passage Couv
+        var impressioncouv = document.getElementById('impressioncouv').value;
+        
+        var priximpcouv = 0;
+        var priximpcouvunitaire = 0;
+        
+        
+        if (impressioncouv === '1'){xxcouv=0.8};
+        if (impressioncouv === '2'){xxcouv=1.4};
+        if(qbn0 != 0){
+            if (impressioncouv === '3'){xxcouv=(140/qbn0)+0.04};
+                            } 
+        if(qbn0 != 0){
+            if (impressioncouv === '4'){xxcouv=(140/qbn0)+0.08};
+                            } 
+
+
+         
+        const checkboxsans = document.getElementById("sans").checked;
+        const checkboxpelr = document.getElementById('pelliculagerecto').checked;
+        const checkboxpelrv = document.getElementById('pelliculagerv').checked;
+        const checkboxcontre = document.getElementById('contrecolle').checked;
+        var xxpel = 0;
+        var finitioncouv = 0;
+        
+        if (checkboxsans === true){xxpel = 0};
+        if (checkboxpelr === true){xxpel = 0.144};
+        if (checkboxpelrv === true){xxpel = 0.288};
+        if (checkboxcontre === true){xxpel = 6};
+
+
+        rtbn.innerHTML = "Nombre total de feuilles interieur : <span class='rtbnb'>"+ formaterbn(rtblocnotes) + " feuilles "+formatbn +" "+ "</span></p>";
+        if (formatbn === "A5")
+        {
+        feuillea0.innerHTML = "Feuilles 89 x 64cm : <span class='rtbnb2'>" + formaterbn(rtblocnotes/16) + " feuilles </span> /" + formaterbn(rtblocnotes/16/500) + " Rames </p>";
+        feuillea3.innerHTML = "Feuilles A3 / SRA3 : <span class='rtbnb2'>" + formaterbn(rtblocnotes/4) + " feuilles </span> /" + formaterbn(rtblocnotes/4/500) + " Rames </p>";
+        feuillea4.innerHTML = "Feuilles A4 / SRA4 : <span class='rtbnb2'>" + formaterbn(rtblocnotes/2) + " feuilles </span> /" + formaterbn(rtblocnotes/2/500) + " Rames </p>";
+        prixpapierint = (rtblocnotes/16/500) * 220
+        priximpint = (rtblocnotes/2)* xxint
+        
+        }  
+        else
+        {
+        feuillea0.innerHTML = "Feuilles 89 x 64cm : <span class='rtbnb2'>" + formaterbn(rtblocnotes/8) + " feuilles </span> /" + formaterbn(rtblocnotes/8/500) + " Rames </p>";
+        feuillea3.innerHTML = "Feuilles A3 / SRA3 : <span class='rtbnb2'>" + formaterbn(rtblocnotes/2) + " feuilles </span> /" + formaterbn(rtblocnotes/2/500) + " Rames </p>";
+        feuillea4.innerHTML = "Feuilles A4 / SRA4 : <span class='rtbnb2'>" + formaterbn(rtblocnotes) + " feuilles </span> /" + formaterbn(rtblocnotes/500) + " Rames </p>";
+        prixpapierint = (rtblocnotes/8/500) * 220
+        priximpint = (rtblocnotes)* xxint
+        }      
+
+        rtbn2.innerHTML = "Nombre total des feuilles de Couverture : <span class='rtbnb'>"+ formaterbn(qnb1*2) + " feuilles "+formatbn +" "+ "</span></p>";
+
+        if (formatbn === "A5"){
+            feuillea02.innerHTML = "Feuilles 89 x 64cm : <span class='rtbnb2'>" + formaterbn(qnb1*2/16) + " feuilles </span> /" + formaterbn(qnb1*2/16/500)+ " Rames"+ "</p>";
+            feuillea32.innerHTML = "Feuilles A3 / SRA3 : <span class='rtbnb2'>" + formaterbn(qnb1*2/4) + " feuilles </span> /" + formaterbn(qnb1*2/4/500) + " Rames"+ "</p>";
+            prixpapiercouv = (qnb1*2/16/500) * 880
+            priximpcouv = (qnb1*2/4)*xxcouv
+            finitioncouv = (qnb1*2/4)*xxpel
+            }  
+            else
+            {
+            feuillea02.innerHTML = "Feuilles 89 x 64cm : <span class='rtbnb2'>" + formaterbn(qnb1*2/8)+ " feuilles </span> /" + formaterbn(qnb1*2/8/500) + " Rames"+ "</p>";
+            feuillea32.innerHTML = "Feuilles A3 / SRA3 : <span class='rtbnb2'>" + formaterbn(qnb1*2/2)+ " feuilles </span> /" + formaterbn(qnb1*2/2/500)+ " Rames"+ "</p>";
+            prixpapiercouv = (qnb1*2/8/500) * 880
+            priximpcouv = (qnb1*2/2)*xxcouv
+            finitioncouv = (qnb1*2/2)*xxpel
+            }      
+           
+           
+        if (checkBox2 === true) { 
+
+            rtbn2.innerHTML = "Nombre total des feuilles de Couverture : <span class='rtbnb'>"+ formaterbn(qnb1) + " feuilles </span>"+formatcouvbn + "</p>";
+
+                    if (formatbn === "A5"){
+                        feuillea02.innerHTML = "Feuilles 89 x 64cm : <span class='rtbnb2'>" + formaterbn(qnb1/8) + " feuilles </span> /" + formaterbn(qnb1/8/500) + " Rames"+ "</p>";
+                        feuillea32.innerHTML = "Feuilles SRA3 : <span class='rtbnb2'>" + formaterbn(qnb1/2) + " feuilles </span> /" + formaterbn(qnb1/2/500) + " Rames </p>";
+                        prixpapiercouv = (qnb1/8/500)* 880  
+                        priximpcouv = (qnb1/2)*xxcouv     
+                        finitioncouv = (qnb1/2)*xxpel        
+                                          }  
+                    else
+                    {
+                        feuillea02.innerHTML = "Feuilles 89 x 64cm : <span class='rtbnb2'>" + formaterbn(qnb1/4) + " feuilles </span> /" + formaterbn(qnb1/4/500) + " Rames </p>";
+                        feuillea32.innerHTML = "Feuilles SRA3 : <span class='rtbnb2'>" + formaterbn(qnb1) + " feuilles </span> /" + formaterbn(qnb1/500) + " Rames </p>";
+                        prixpapiercouv = (qnb1/4/500)* 880
+                        priximpcouv = (qnb1)*xxcouv  
+                        finitioncouv = (qnb1)*xxpel    
+                    }      
+
+                                    }
+            prixpapiertotal = prixpapierint + prixpapiercouv
+            prixpapierunitaire = prixpapiertotal/qnb1
+          
+            priximpintunitaire = priximpint/qbn0
+
+            priximpcouvunitaire = priximpcouv/qbn0
+            
+            prixt = prixpapiertotal + priximpint + priximpcouv + finitioncouv + xxreliure
+
+
+            if(qbn0 != 0)
+            {
+            couttotalP.innerHTML = "Coût Papier Total (HT) :  <span class='rtbnb2'>" + formater(prixpapiertotal.toFixed(3))+"</span></p>";
+            coutunitaireP.innerHTML = "Coût papier Unitaire (HT) : <span class='rtbnblue'>" + formater(prixpapierunitaire.toFixed(3))+"</span></p>";
+            coutimpint.innerHTML = "Coût Total d'impression Intérieur (HT) : <span class='rtbnb2'>" + formater(priximpint.toFixed(3))+"</span></p>";
+            coutimpintunitaire.innerHTML = "Coût d'impression Intérieur unitaire (HT) : <span class='rtbnblue'>" + formater(priximpintunitaire.toFixed(3))+"</span></p>";
+            coutimpcouvunitaire.innerHTML="Coût Impression Couverture unitaire (HT) : <span class='rtbnblue'>" + formater(priximpcouvunitaire.toFixed(3))+"</span></p>";
+            coutimpcouv.innerHTML = "Coût Total d'impression Couverture (HT) : <span class='rtbnb2'>" + formater(priximpcouv.toFixed(3))+"</span></p>";
+            pellcouvunitaire.innerHTML = "Coût unitaire Finition Couv (HT) : <span class='rtbnblue'>" +formater((finitioncouv/qbn0).toFixed(3))+"</span></p>";
+            pellcouv.innerHTML = "Coût Total Finition Couv (HT) : <span class='rtbnb2'>" + formater(finitioncouv.toFixed(3))+"</span></p>";
+            reliureunitaire.innerHTML = "Coût unitaire de la Reliure (HT) : <span class='rtbnblue'>" + formater((xxreliure/qbn0).toFixed(3))+"</span></p>";
+            reliure.innerHTML = "Coût Total de la Reliure (HT) : <span class='rtbnb2'>" + formater(xxreliure.toFixed(3))+"</span></p>";
+            prixtotal.innerHTML = formater((prixt.toFixed(3)));
+            prixunitaire.innerHTML = formater((prixt/qbn0).toFixed(3).toLocaleUpperCase());
+            }
+                         else
+                         {
+                         couttotalP.innerHTML = "Coût Papier Total (HT) : 0,000 TND"
+                         coutunitaireP.innerHTML = "Coût papier Unitaire (HT) : 0,000 TND"
+                         coutimpintunitaire.innerHTML = "Coût Impression intérieur unitaire (HT) : 0,000 TND"
+                         coutimpint.innerHTML = "Coût Impression intérieur Total (HT) : 0,000 TND"
+                         coutimpcouvunitaire.innerHTML="Coût Impression Couverture unitaire (HT) : 0,000 TND"
+                         coutimpcouv.innerHTML = "Coût Total d'impression Couverture (HT) : 0,000 TND"
+                         pellcouvunitaire.innerHTML = "Coût unitaire Finition Couv (HT) : 0,000 TND"
+                         pellcouv.innerHTML = "Coût Total Finition Couv (HT) : 0,000 TND"
+                         reliureunitaire.innerHTML = "Coût unitaire de la Reliure (HT) : 0,000 TND"
+                         reliure.innerHTML = "Coût Total de la Reliure (HT) : 0,000 TND"
+                         prixtotal.innerHTML = "Prix Total HT : 0,000 TND"
+                         prixunitaire.innerHTML ="Prix Unitaire HT : 0,000 TND"
+
+                        }
+
+
+}
+
+var qnb1change = document.getElementById('qnb1');
+    qnb1change.addEventListener("keyup",resultatbn);
+    qnb1change.addEventListener("change",resultatbn);
+var qnb2change = document.getElementById('qnb2');
+    qnb2change.addEventListener("keyup",resultatbn);
+    qnb2change.addEventListener("change",resultatbn);
+var checkA5 = document.getElementById("A5");
+    checkA5.addEventListener("change",resultatbn);      
+var checkA4 = document.getElementById("A4");
+    checkA4.addEventListener("change",resultatbn);
+
+var checkspirale = document.getElementById("spirale");
+    checkspirale.addEventListener("change",resultatbn);
+var checkspiralehaut = document.getElementById("spiralehaut");
+    checkspiralehaut.addEventListener("change",resultatbn);
+var checkdos = document.getElementById("dos");
+    checkdos.addEventListener("change",resultatbn);
+var impintchange = document.getElementById('impressionint');
+
+var impressioncouvchange = document.getElementById('impressioncouv');
+
+impintchange.addEventListener('change',resultatbn);
+impintchange.addEventListener('keyup',resultatbn);
+
+impressioncouvchange.addEventListener('change',resultatbn);
+impressioncouvchange.addEventListener('keyup',resultatbn);
+
+
+var checkboxsanschange = document.getElementById("sans");
+var checkboxpelrchange = document.getElementById('pelliculagerecto');
+var checkboxpelrvchange = document.getElementById('pelliculagerv');
+var checkboxcontrechange = document.getElementById('contrecolle');
+
+checkboxsanschange.addEventListener('change',resultatbn);
+checkboxsanschange.addEventListener('keyup',resultatbn);
+
+checkboxpelrchange.addEventListener('change',resultatbn);
+checkboxpelrchange.addEventListener('keyup',resultatbn);
+
+checkboxpelrvchange.addEventListener('change',resultatbn);
+checkboxpelrvchange.addEventListener('keyup',resultatbn);
+
+checkboxcontrechange.addEventListener('change',resultatbn);
+checkboxcontrechange.addEventListener('keyup',resultatbn);
+
+
+
+
 
 //---------------------------------------Fin Devis bloc notes------------------------------------

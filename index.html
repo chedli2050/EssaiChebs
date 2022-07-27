@@ -71,7 +71,7 @@
         <div id="bnp1" class="boxsdusommaire">
             <img src="photos/blocnote.png" alt="blocnote" class="photobn2">
           
-            <div id="resultatfinalbn">
+            <div id="resultatfinalbn">          <!-- Resultat Final Devis bloc Notes -->
                 <div class="f1">
                     <p class="titrebn">Quantité</p>
                     <p id="qbnF">10</p>
@@ -99,18 +99,111 @@
         </div>    
      
         <div id="bnp2" class="boxsdusommaire">
-           
+            <div class="boxa4a5">
+                <span id="formatblocnotestitre">Format du Bloc Notes : </span><br>
+                <input type="radio" name="formatblocnotes" id="A5" value="0" checked>
+                <label for="A5" id="labelradio1"> Format A5</label>
+                <input type="radio" name="formatblocnotes" id="A4" value="1">
+                <label for="A4" id="labelradio2">Format A4</label><br><br>
+            </div>
+            <div class="boxspiralehautdos">
+                <span id="typeblocnotetitre">Finition du Bloc Notes : </span><br>           
+                <input type="radio" name="typebn" id="spirale" checked>
+                <label for="spirale" id="labelspirale">Spirales côté</label>
+                <input type="radio" name="typebn" id="spiralehaut">
+                <label for="spiralehaut" id="labelspiralehaut">Spirales Haut</label>
+                <input type="radio" name="typebn" id="dos">
+                <label for="dos" id="labeldos">Dos Collé</label><br>
+            </div>
+
+            <div class="pelliculagecontrecollage">
+                <span id="finitioncouvtitre">Finition de la Couverture : </span><br>
+                <input type="radio" name="finitioncouv" id="sans" checked>
+                <label for="sans" id="labelsans">Sans Pélliculage</label>            
+                <input type="radio" name="finitioncouv" id="pelliculagerecto" >
+                <label for="pelliculagerecto" id="labelr">Pélliculage R </label>
+                <input type="radio" name="finitioncouv" id="pelliculagerv">
+                <label for="pelliculagerv" id="labelrv">Pélliculage RV</label><br>            
+                <input type="radio" name="finitioncouv" id="contrecolle">
+                <label for="contrecolle" id="labelcontre">Contre Collé/Carton</label><br>
+            </div>
+            <div class="impressioninterieurblocnotes">
+                <label for="impressionint" class="petittitredevis2">Impression intérieur</label>
+                <select name="impressionint" id="impressionint">
+                    <optgroup label="Impression Numérique">
+                        <option value="1" selected>Numérique Noir Recto</option>
+                        <option value="2">Numérique Noir Recto/Verso</option>
+                        <option value="3">Numérique Quadri Recto</option>
+                        <option value="4">Numérique Quadri Recto/Verso</option>
+                    </optgroup>
+                    <optgroup label="Impression Offset">
+                        <option value="5">Offset 1 Couleur Recto</option>
+                        <option value="6">Offset 1 Couleur Recto/Verso</option>
+                        <option value="7">Offset Quadri Recto</option>
+                        <option value="8">Offset Quadri Recto/Verso</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+            <div class="impressioncouvertureblocnotes">
+                <label for="impressioncouv" class="petittitredevis2">Impression de la Couverture</label>
+                <select name="impressioncouv" id="impressioncouv">
+                    <optgroup label="Impression Numérique">
+                        <option value="1" selected>Numérique Quadri Recto</option>
+                        <option value="2">Numérique Quadri Recto/Verso</option>
+                    </optgroup>
+                    <optgroup label="Impression Offset">
+                        <option value="3">Offset Quadri Recto</option>
+                        <option value="4">Offset Quadri Recto/Verso</option>
+                    </optgroup>
+                </select>
+            </div>
+
         </div>
      
+
         <div id="bnp3" class="boxsdusommaire">
-         
+
+            <Div class="boxfeuillesbn">
+                <p class="petittitredevis">Papier intérieur nécessaire (selon format) :</p>
+                <div class="papierint">
+                    <p id="rtbn">Nombre Total des feuilles de l'interieur : <span class="rtbnb"> </span></p>
+                    <p id="feuillea0">Feuilles 89 x 64cm :</p>
+                    <p id="feuillea3">Feuilles A3/SRA3 :</p>
+                    <p id="feuillea4">Feuilles A4/SRA4 :</p>
+                </div>
+                <p class="petittitredevis">Papier Couverture nécessaire (selon format) :</p>
+
+                <div class="papiercouv">
+                    <p id="rtbn2">Nombre Total des feuilles de Couverture : <span class="rtbnb"> </span></p>
+                    <p id="feuillea02">Feuilles 89 x 64cm :</p>
+                    <p id="feuillea32">Feuilles A3/SRA3 :</p>
+                </div>
+                </div>
+
         </div>
         
         <div id="bnp4" class="boxsdusommaire">
-         
+            <p class="petittitredevis">Répartition du prix : </p>
+            <p id="coutunitaireP">Coût papier Unitaire (HT) : 0 </p>
+            <p id="couttotalP">Coût Papier Total (HT) : 0</p>
+           
+            <p id="coutimpintunitaire">Coût Impression intérieur unitaire : 0.000DT</p>
+            <p id="coutimpint">Coût Impression intérieur Total (HT) : 0.000DT</p>
+            
+            <p id="coutimpcouvunitaire">Coût Impression couverture unitaire : 0.000DT</p>
+            <p id="coutimpcouv">Coût Impression couverture Total (HT) : 0.000DT</p>
+           
+            <p id="pellcouvunitaire">Coût pelliculage couverture unitaire : 0.000DT</p>
+            <p id="pellcouv">Coût Pelliculage couverture (HT) : 0.000DT</p>
+            
+            <p id="reliureunitaire">Coût Unitaire de la Reliure (HT): 0.000DT</p>
+            <p id="reliure">Coût Total de la Reliure (HT) : 0.000DT</p>
         </div>
      
     </Div>
+
+<!-- ------------------------fin Box Devis Bloc Notes------------------------------------------------ -->
 
     <Div id="boxlivres" class="boxlivres0">
         <div id="livresp1" class="boxsdusommaire">

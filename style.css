@@ -191,9 +191,6 @@ body{margin: 0%;padding: 0%;}
 .boxblocnotes1.opaque{margin-left: -400px;transform: scale(0);opacity: 0;}
 
 #bnp1{background-color: rgba(255, 255, 255, 0);    border: 1px solid black;}
-#bnp2{background-color: rgba(255, 255, 255, 0);    border: 1px solid black;}
-#bnp3{background-color: rgba(255, 255, 255, 0);    border: 1px solid black;}
-#bnp4{background-color: rgba(255, 255, 255, 0);    border: 1px solid black;}
 
 
 #resultatfinalbn
@@ -237,6 +234,24 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 .photobn{width: 300px; height: 150px;}
 .photobn2{position: relative;top: 10px;left: 10px;width: 200px;}
+
+#bnp2
+{
+    background-color: rgba(255, 255, 255, 0);font-family: Arial; 
+    display: flex; justify-content: space-around;justify-items: center;align-content: center; flex-wrap: wrap;
+    
+    border: 1px solid black; /* à enlever */
+}
+
+.boxa4a5{border: 1px solid black;}
+.boxspiralehautdos{border: 1px solid black;}
+.pelliculagecontrecollage{border: 1px solid black;}
+.impressioninterieurblocnotes{border: 1px solid black;}
+.impressioncouvertureblocnotes{border: 1px solid black;}
+
+
+#bnp3{background-color: rgba(255, 255, 255, 0);    border: 1px solid black;}
+#bnp4{background-color: rgba(255, 255, 255, 0);    border: 1px solid black;}
 
 
 /* ****** FIN BOX Bloc Notes ****** ****** FIN BOX Bloc Notes ****** ****** FIN BOX Bloc Notes ****** ****** FIN BOX Bloc Notes ****** */
