@@ -325,14 +325,45 @@ function resultatbn(){
         rtblocnotes = qbn0 * volbn0;
         if (qbn0 != ""){qbnF.innerHTML= formaterbnsansvirgule(qnb1)} else {qbnF.innerHTML="0"};
 
-        if (checkBox === true) {formatbn= "A5";} // formatphotobn.className = "formatphotobn0" 
-        else{formatbn = "A4";}  // formatphotobn.className = "formatphotobn1"  
+        var labelradio1 = document.getElementById('labelradio1');
+        var labelradio2 = document.getElementById('labelradio2');
+
+        if (checkBox === true) {formatbn= "A5"
+                                labelradio1.innerHTML = '<i class="fa-solid fa-circle-check"></i> Format A5'
+                                labelradio2.innerHTML = 'Format A4'
+                                labelradio1.style.backgroundColor="rgba(7, 117, 115, 0.905)"
+                                labelradio1.style.color ="white"
+                                labelradio2.style.backgroundColor="rgba(7, 117, 115, 0)"
+                                labelradio2.style.color ="rgba(7, 117, 115, 0.905)"
+                                } // formatphotobn.className = "formatphotobn0" 
+        else{formatbn = "A4";
+                                labelradio1.innerHTML = 'Format A5'
+                                labelradio2.innerHTML = '<i class="fa-solid fa-circle-check"></i> Format A4'
+                                labelradio2.style.backgroundColor="rgba(7, 117, 115, 0.905)"
+                                labelradio2.style.color ="white"
+                                labelradio1.style.backgroundColor="rgba(7, 117, 115, 0)"
+                                labelradio1.style.color ="rgba(7, 117, 115, 0.905)"
+            }  // formatphotobn.className = "formatphotobn1"  
         
         var xxreliure = 0;
+        var labeldos = document.getElementById('labeldos');
+        var labelspirale = document.getElementById('labelspirale');
+        var labelspiralehaut = document.getElementById('labelspiralehaut');
 
         const checkBox2 = document.getElementById('dos').checked;  
         if (checkBox2 === true) 
         {
+            labeldos.innerHTML = '<i class="fa-solid fa-circle-check"></i> Dos Collé'
+            labeldos.style.backgroundColor="rgba(23, 85, 184, 0.764)"
+            labeldos.style.color ="white"
+            labelspirale.innerHTML = 'Spirales côté'
+            labelspirale.style.backgroundColor="rgba(23, 85, 184, 0)"
+            labelspirale.style.color ="rgba(23, 85, 184, 0.764)"
+            labelspiralehaut.innerHTML = 'Spirales Haut'
+            labelspiralehaut.style.backgroundColor="rgba(23, 85, 184, 0)"
+            labelspiralehaut.style.color ="rgba(23, 85, 184, 0.764)"
+
+
             if (formatbn == "A5")
             {
             formatcouvbn = "A4+"
@@ -347,6 +378,17 @@ function resultatbn(){
 
         if (spirale === true)
         {
+            labeldos.innerHTML = 'Dos Collé'
+            labeldos.style.backgroundColor="rgba(23, 85, 184, 0)"
+            labeldos.style.color ="rgba(23, 85, 184, 0.764)"
+            labelspirale.innerHTML = '<i class="fa-solid fa-circle-check"></i> Spirales côté'
+            labelspirale.style.backgroundColor="rgba(23, 85, 184, 0.764)"
+            labelspirale.style.color ="white"
+            labelspiralehaut.innerHTML = 'Spirales Haut'
+            labelspiralehaut.style.backgroundColor="rgba(23, 85, 184, 0)"
+            labelspiralehaut.style.color ="rgba(23, 85, 184, 0.764)"
+
+            
             if (formatbn == "A5") {xxreliure = qbn0 * 0.45}
             else {xxreliure = qbn0 * 0.55}
 
@@ -355,6 +397,18 @@ function resultatbn(){
         const spiralehaut = document.getElementById('spiralehaut').checked;
         if (spiralehaut === true)
         {
+            labeldos.innerHTML = 'Dos Collé'
+            labeldos.style.backgroundColor="rgba(23, 85, 184, 0)"
+            labeldos.style.color ="rgba(23, 85, 184, 0.764)"
+            labelspirale.innerHTML = 'Spirales côté'
+            labelspirale.style.backgroundColor="rgba(23, 85, 184, 0)"
+            labelspirale.style.color ="rgba(23, 85, 184, 0.764)"
+            labelspiralehaut.innerHTML = '<i class="fa-solid fa-circle-check"></i> Spirales Haut'
+            labelspiralehaut.style.backgroundColor="rgba(23, 85, 184, 0.764)"
+            labelspiralehaut.style.color ="white"
+            
+            
+            
             if (formatbn == "A5") {xxreliure = qbn0 * 0.35}
             else {xxreliure = qbn0 * 0.45}
         
@@ -416,11 +470,91 @@ function resultatbn(){
         const checkboxcontre = document.getElementById('contrecolle').checked;
         var xxpel = 0;
         var finitioncouv = 0;
+        var labelsans = document.getElementById('labelsans');
+        var labelr = document.getElementById('labelr');
+        var labelrv = document.getElementById('labelrv');
+        var labelcontre = document.getElementById('labelcontre');
+
+        if (checkboxsans === true)
+        {
+            labelsans.innerHTML = '<i class="fa-solid fa-circle-check"></i> Sans Pélliculage'
+            labelsans.style.backgroundColor="rgba(13, 128, 190, 0.961)"
+            labelsans.style.color ="white"
+            
+            labelr.innerHTML = 'Pélliculage R'
+            labelr.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelr.style.color ="rgba(13, 128, 190, 0.961)"
+            
+            labelrv.innerHTML = 'Pélliculage RV'
+            labelrv.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelrv.style.color ="rgba(13, 128, 190, 0.961)"
+
+            labelcontre.innerHTML = 'Contre Collé'
+            labelcontre.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelcontre.style.color ="rgba(13, 128, 190, 0.961)"
         
-        if (checkboxsans === true){xxpel = 0};
-        if (checkboxpelr === true){xxpel = 0.144};
-        if (checkboxpelrv === true){xxpel = 0.288};
-        if (checkboxcontre === true){xxpel = 6};
+            xxpel = 0
+        };
+        if (checkboxpelr === true)
+        {
+            labelsans.innerHTML = 'Sans Pélliculage'
+            labelsans.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelsans.style.color ="rgba(13, 128, 190, 0.961)"
+            
+            labelr.innerHTML = '<i class="fa-solid fa-circle-check"></i> Pélliculage R'
+            labelr.style.backgroundColor="rgba(13, 128, 190, 0.961)"
+            labelr.style.color ="white"
+            
+            labelrv.innerHTML = 'Pélliculage RV'
+            labelrv.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelrv.style.color ="rgba(13, 128, 190, 0.961)"
+
+            labelcontre.innerHTML = 'Contre Collé'
+            labelcontre.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelcontre.style.color ="rgba(13, 128, 190, 0.961)"
+        
+            xxpel = 0.144
+        };
+        if (checkboxpelrv === true)
+        {
+            labelsans.innerHTML = 'Sans Pélliculage'
+            labelsans.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelsans.style.color ="rgba(13, 128, 190, 0.961)"
+            
+            labelr.innerHTML = 'Pélliculage R'
+            labelr.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelr.style.color ="rgba(13, 128, 190, 0.961)"
+            
+            labelrv.innerHTML = '<i class="fa-solid fa-circle-check"></i> Pélliculage RV'
+            labelrv.style.backgroundColor="rgba(13, 128, 190, 0.961)"
+            labelrv.style.color ="white"
+
+            labelcontre.innerHTML = 'Contre Collé'
+            labelcontre.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelcontre.style.color ="rgba(13, 128, 190, 0.961)"
+        
+            xxpel = 0.288
+        };
+        if (checkboxcontre === true)
+        {
+            labelsans.innerHTML = 'Sans Pélliculage'
+            labelsans.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelsans.style.color ="rgba(13, 128, 190, 0.961)"
+            
+            labelr.innerHTML = 'Pélliculage R'
+            labelr.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelr.style.color ="rgba(13, 128, 190, 0.961)"
+            
+            labelrv.innerHTML = 'Pélliculage RV'
+            labelrv.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelrv.style.color ="rgba(13, 128, 190, 0.961)"
+
+            labelcontre.innerHTML = '<i class="fa-solid fa-circle-check"></i> Contre Collé'
+            labelcontre.style.backgroundColor="rgba(13, 128, 190, 0.961)"
+            labelcontre.style.color ="white"
+
+            xxpel = 6
+        };
 
 
         rtbn.innerHTML = "Nombre total de feuilles interieur : <span class='rtbnb'>"+ formaterbn(rtblocnotes) + " feuilles "+formatbn +" "+ "</span></p>";
@@ -519,8 +653,8 @@ function resultatbn(){
                          pellcouv.innerHTML = "Coût Total Finition Couv (HT) : 0,000 TND"
                          reliureunitaire.innerHTML = "Coût unitaire de la Reliure (HT) : 0,000 TND"
                          reliure.innerHTML = "Coût Total de la Reliure (HT) : 0,000 TND"
-                         prixtotal.innerHTML = "Prix Total HT : 0,000 TND"
-                         prixunitaire.innerHTML ="Prix Unitaire HT : 0,000 TND"
+                         prixtotal.innerHTML = "0,000 TND"
+                         prixunitaire.innerHTML ="0,000 TND"
 
                         }
 

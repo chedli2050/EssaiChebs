@@ -100,16 +100,14 @@
      
         <div id="bnp2" class="boxsdusommaire">
             <div class="boxa4a5">
-                <span id="formatblocnotestitre">Format du Bloc Notes : </span><br>
                 <input type="radio" name="formatblocnotes" id="A5" value="0" checked>
-                <label for="A5" id="labelradio1"> Format A5</label>
+                <label for="A5" id="labelradio1"> <i class="fa-solid fa-circle-check"></i> Format A5</label>
                 <input type="radio" name="formatblocnotes" id="A4" value="1">
-                <label for="A4" id="labelradio2">Format A4</label><br><br>
+                <label for="A4" id="labelradio2">Format A4</label>
             </div>
-            <div class="boxspiralehautdos">
-                <span id="typeblocnotetitre">Finition du Bloc Notes : </span><br>           
+            <div class="boxspiralehautdos">         
                 <input type="radio" name="typebn" id="spirale" checked>
-                <label for="spirale" id="labelspirale">Spirales côté</label>
+                <label for="spirale" id="labelspirale"> <i class="fa-solid fa-circle-check"></i> Spirales côté</label>
                 <input type="radio" name="typebn" id="spiralehaut">
                 <label for="spiralehaut" id="labelspiralehaut">Spirales Haut</label>
                 <input type="radio" name="typebn" id="dos">
@@ -117,18 +115,19 @@
             </div>
 
             <div class="pelliculagecontrecollage">
-                <span id="finitioncouvtitre">Finition de la Couverture : </span><br>
                 <input type="radio" name="finitioncouv" id="sans" checked>
-                <label for="sans" id="labelsans">Sans Pélliculage</label>            
+                <label for="sans" id="labelsans"> <i class="fa-solid fa-circle-check"></i> Sans Pélliculage</label>            
                 <input type="radio" name="finitioncouv" id="pelliculagerecto" >
-                <label for="pelliculagerecto" id="labelr">Pélliculage R </label>
+                <label for="pelliculagerecto" id="labelr">Pélliculage R</label>
                 <input type="radio" name="finitioncouv" id="pelliculagerv">
                 <label for="pelliculagerv" id="labelrv">Pélliculage RV</label><br>            
                 <input type="radio" name="finitioncouv" id="contrecolle">
-                <label for="contrecolle" id="labelcontre">Contre Collé/Carton</label><br>
+                <label for="contrecolle" id="labelcontre">Contre Collé</label><br>
             </div>
+
+            <Div class="boximpression">
             <div class="impressioninterieurblocnotes">
-                <label for="impressionint" class="petittitredevis2">Impression intérieur</label>
+                <label for="impressionint" class="titrebn3">Impression intérieur</label><br>
                 <select name="impressionint" id="impressionint">
                     <optgroup label="Impression Numérique">
                         <option value="1" selected>Numérique Noir Recto</option>
@@ -146,7 +145,7 @@
             </div>
             
             <div class="impressioncouvertureblocnotes">
-                <label for="impressioncouv" class="petittitredevis2">Impression de la Couverture</label>
+                <label for="impressioncouv" class="titrebn3">Impression de la Couverture</label><br>
                 <select name="impressioncouv" id="impressioncouv">
                     <optgroup label="Impression Numérique">
                         <option value="1" selected>Numérique Quadri Recto</option>
@@ -158,7 +157,7 @@
                     </optgroup>
                 </select>
             </div>
-
+            </Div>
         </div>
      
 

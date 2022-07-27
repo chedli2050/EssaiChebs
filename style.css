@@ -204,9 +204,9 @@ body{margin: 0%;padding: 0%;}
 .f1, .f2, .f3 {margin: 1%;border-radius: 5px;display: block;
                display: flex;justify-content: center ;flex-direction: column;align-content: center;
                 }
-.f1{background-color: rgba(8, 49, 171, 0.132);width: 30%;}
-.f2{background-color: rgba(81, 91, 122, 0.232);width: 30%;}
-.f3{background-color: rgba(15, 96, 236, 0.408);width: 30%;}
+.f1{background-color: rgba(8, 49, 171, 0.132);width: 20%;}
+.f2{background-color: rgba(81, 91, 122, 0.232);width: 35%;}
+.f3{background-color: rgba(15, 96, 236, 0.408);width: 40%;}
 
 #qbnF, #prixunitaire, #prixtotal{text-align: center;font-family: Arial;margin: 0;padding: 0;
 font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
@@ -229,7 +229,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
              }
 
 .titrebn2{text-align: center;margin: 0;padding: 0;font-family: Arial;font-size: 14pt;color: rgb(23, 85, 184);
-          position: relative;top: 10px;font-weight: bold;
+          position: relative;top: 10px;font-weight: bold;margin-left: -6px;
          }
 
 .photobn{width: 300px; height: 150px;}
@@ -238,16 +238,78 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 #bnp2
 {
     background-color: rgba(255, 255, 255, 0);font-family: Arial; 
-    display: flex; justify-content: space-around;justify-items: center;align-content: center; flex-wrap: wrap;
-    
+    display: flex;flex-direction: column;justify-content: space-between;
     border: 1px solid black; /* à enlever */
 }
+.titrebn3{color: rgb(23, 85, 184);margin-left: 3px;}
 
-.boxa4a5{border: 1px solid black;}
-.boxspiralehautdos{border: 1px solid black;}
-.pelliculagecontrecollage{border: 1px solid black;}
-.impressioninterieurblocnotes{border: 1px solid black;}
-.impressioncouvertureblocnotes{border: 1px solid black;}
+
+#impressionint{font-size: 14pt; background-color: rgba(255, 255, 255, 0.247);}
+#impressioncouv{font-size: 14pt; background-color: rgba(255, 255, 255, 0.247);}
+
+
+
+
+#A4, #A5, #spirale,#spiralehaut,#dos,#sans,#pelliculagerecto,#pelliculagerv,#contrecolle
+                               {display: none;}
+
+
+
+
+
+.boxa4a5 {border: 1px solid black;display: flex;flex-wrap: wrap;justify-content: center;}
+
+#labelradio1{border: 3px solid rgba(7, 117, 115, 0.905);font-size: 14pt; font-weight: bold;padding: 5px;
+             background-color: rgba(7, 117, 115, 0.905);color: white;width: 35%;border-radius: 5px;
+             display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;
+            }
+#labelradio2{border: 3px solid rgba(7, 117, 115, 0.905);font-size: 14pt; font-weight: bold;padding: 5px;
+             background-color: #71cc0100;color: rgba(7, 117, 115, 0.905);width: 35%;border-radius: 5px;
+             display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;}
+
+
+
+
+.boxspiralehautdos{border: 1px solid black;display: flex;flex-wrap: wrap;justify-content: center;}
+
+#labelspirale{border: 3px solid rgb(23, 85, 184, 0.764);font-size: 14pt; font-weight: bold;padding: 5px;
+              background-color: rgb(23, 85, 184, 0.764);color: white;width: 35%;border-radius: 5px;
+              display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;
+             }    
+#labelspiralehaut{border: 3px solid rgb(23, 85, 184, 0.764);font-size: 14pt; font-weight: bold;padding: 5px;
+                 background-color: #71cc0100;color: rgb(23, 85, 184, 0.764);width: 35%;border-radius: 5px;
+                  display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;}
+#labeldos{border: 3px solid rgb(23, 85, 184, 0.764);font-size: 14pt; font-weight: bold;padding: 5px;
+          background-color: #71cc0100;color: rgb(23, 85, 184, 0.764);width: 35%;border-radius: 5px;
+          display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
+
+
+
+.pelliculagecontrecollage{border: 1px solid black;display: flex;flex-wrap: wrap;justify-content: center;}
+
+#labelsans{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 14pt; font-weight: bold;padding: 5px;
+    background-color: rgba(13, 128, 190, 0.961);color: white;width: 35%;border-radius: 5px;
+    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;
+   }    
+#labelr{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 14pt; font-weight: bold;padding: 5px;
+    background-color: #71cc0100;color: rgba(13, 128, 190, 0.961);width: 35%;border-radius: 5px;
+    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;}
+#labelrv{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 14pt; font-weight: bold;padding: 5px;
+    background-color: #71cc0100;color: rgba(13, 128, 190, 0.961);width: 35%;border-radius: 5px;
+    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
+#labelcontre{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 14pt; font-weight: bold;padding: 5px;
+    background-color: #71cc0100;color: rgba(13, 128, 190, 0.961);width: 35%;border-radius: 5px;
+    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
+
+
+.boximpression{display: flex;justify-content: space-around;}
+.impressioninterieurblocnotes{border: 1px solid black;width: 45%;}
+.impressioncouvertureblocnotes{border: 1px solid black;width: 45%;}
+#impressionint{width: 100%;}
+#impressioncouv{width: 100%;}
+
+
+
 
 
 #bnp3{background-color: rgba(255, 255, 255, 0);    border: 1px solid black;}
