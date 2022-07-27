@@ -190,7 +190,7 @@ body{margin: 0%;padding: 0%;}
 .boxblocnotes1{transition-duration: 0.8s;margin-left: 0px;transform: scale(1); opacity: 1;} 
 .boxblocnotes1.opaque{margin-left: -400px;transform: scale(0);opacity: 0;}
 
-#bnp1{background-color: rgba(255, 255, 255, 0);    border: 1px solid black;}
+#bnp1{background-color: rgba(255, 255, 255, 0);}
 
 
 #resultatfinalbn
@@ -239,7 +239,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 {
     background-color: rgba(255, 255, 255, 0);font-family: Arial; 
     display: flex;flex-direction: column;justify-content: space-between;
-    border: 1px solid black; /* à enlever */
+    /* border: 1px solid black; à enlever */
 }
 .titrebn3{color: rgb(23, 85, 184);margin-left: 3px;}
 
@@ -257,7 +257,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 
 
-.boxa4a5 {border: 1px solid black;display: flex;flex-wrap: wrap;justify-content: center;}
+.boxa4a5 {display: flex;flex-wrap: wrap;justify-content: center;}
 
 #labelradio1{border: 3px solid rgba(7, 117, 115, 0.905);font-size: 14pt; font-weight: bold;padding: 5px;
              background-color: rgba(7, 117, 115, 0.905);color: white;width: 35%;border-radius: 5px;
@@ -270,7 +270,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 
 
-.boxspiralehautdos{border: 1px solid black;display: flex;flex-wrap: wrap;justify-content: center;}
+.boxspiralehautdos{display: flex;flex-wrap: wrap;justify-content: center;}
 
 #labelspirale{border: 3px solid rgb(23, 85, 184, 0.764);font-size: 14pt; font-weight: bold;padding: 5px;
               background-color: rgb(23, 85, 184, 0.764);color: white;width: 35%;border-radius: 5px;
@@ -285,7 +285,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 
 
-.pelliculagecontrecollage{border: 1px solid black;display: flex;flex-wrap: wrap;justify-content: center;}
+.pelliculagecontrecollage{display: flex;flex-wrap: wrap;justify-content: center;}
 
 #labelsans{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 14pt; font-weight: bold;padding: 5px;
     background-color: rgba(13, 128, 190, 0.961);color: white;width: 35%;border-radius: 5px;
@@ -312,8 +312,8 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 
 
-#bnp3{background-color: rgba(255, 255, 255, 0);    border: 1px solid black;}
-#bnp4{background-color: rgba(255, 255, 255, 0);    border: 1px solid black;}
+#bnp3{background-color: rgba(255, 255, 255, 0);margin: 0;padding: 0;font-size: 10pt;    }
+#bnp4{background-color: rgba(255, 255, 255, 0);margin: 0;padding: 0;font-size: 10pt;   }
 
 
 /* ****** FIN BOX Bloc Notes ****** ****** FIN BOX Bloc Notes ****** ****** FIN BOX Bloc Notes ****** ****** FIN BOX Bloc Notes ****** */
@@ -547,10 +547,10 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
         .boxblocnotes1{transition-duration: 0.8s;margin-left: 0px;transform: scale(1); opacity: 1;} 
         .boxblocnotes1.opaque{margin-left: -400px;transform: scale(0);opacity: 0;}
         
-        #bnp1{border: 1px solid black;height: 300px}
-        #bnp2{border: 1px solid black;height: 300px}
-        #bnp3{border: 1px solid black;height: 300px}
-        #bnp4{border: 1px solid black;height: 300px}
+        #bnp1{height: 300px}
+        #bnp2{height: 300px}
+        #bnp3{height: 300px}
+        #bnp4{height: 300px}
 
         #boxlivres
         {
@@ -622,6 +622,55 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
         .boxparametrage1{transition-duration: 0.8s;margin-left: 0px;transform: scale(1); opacity: 1;} 
         .boxparametrage1.opaque{margin-left: -400px;transform: scale(0);opacity: 0;}
 
+/* Box Devis*/
 
+#labelradio1{border: 3px solid rgba(7, 117, 115, 0.905);font-size: 10pt; font-weight: bold;padding: 5px;
+             background-color: rgba(7, 117, 115, 0.905);color: white;width: 35%;border-radius: 5px;
+             display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;
+            }
+#labelradio2{border: 3px solid rgba(7, 117, 115, 0.905);font-size: 10pt; font-weight: bold;padding: 5px;
+             background-color: #71cc0100;color: rgba(7, 117, 115, 0.905);width: 35%;border-radius: 5px;
+             display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;}
+
+
+
+
+#labelspirale{border: 3px solid rgb(23, 85, 184, 0.764);font-size: 10pt; font-weight: bold;padding: 5px;
+              background-color: rgb(23, 85, 184, 0.764);color: white;width: 35%;border-radius: 5px;
+              display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;
+             }    
+#labelspiralehaut{border: 3px solid rgb(23, 85, 184, 0.764);font-size: 10pt; font-weight: bold;padding: 5px;
+                 background-color: #71cc0100;color: rgb(23, 85, 184, 0.764);width: 35%;border-radius: 5px;
+                  display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;}
+#labeldos{border: 3px solid rgb(23, 85, 184, 0.764);font-size: 10pt; font-weight: bold;padding: 5px;
+          background-color: #71cc0100;color: rgb(23, 85, 184, 0.764);width: 35%;border-radius: 5px;
+          display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
+
+
+
+
+#labelsans{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 10pt; font-weight: bold;padding: 5px;
+    background-color: rgba(13, 128, 190, 0.961);color: white;width: 35%;border-radius: 5px;
+    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;
+   }    
+#labelr{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 10pt; font-weight: bold;padding: 5px;
+    background-color: #71cc0100;color: rgba(13, 128, 190, 0.961);width: 35%;border-radius: 5px;
+    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;}
+#labelrv{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 10pt; font-weight: bold;padding: 5px;
+    background-color: #71cc0100;color: rgba(13, 128, 190, 0.961);width: 35%;border-radius: 5px;
+    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
+#labelcontre{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 10pt; font-weight: bold;padding: 5px;
+    background-color: #71cc0100;color: rgba(13, 128, 190, 0.961);width: 35%;border-radius: 5px;
+    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
+
+
+.boximpression{display: flex;justify-content: space-around;}
+.impressioninterieurblocnotes{width: 45%;}
+.impressioncouvertureblocnotes{width: 45%;}
+#impressionint{width: 100%;}
+#impressioncouv{width: 100%;}
+#impressionint{font-size: 12pt; background-color: rgba(255, 255, 255, 0.247);}
+#impressioncouv{font-size: 12pt; background-color: rgba(255, 255, 255, 0.247);}
+/* Fin Box Devis*/
 
 }
