@@ -269,6 +269,7 @@ parametragebtm.addEventListener('click',ouvrirparametrage);
 
 
 function formaterbn(v){return Intl.NumberFormat('fr-FR',{ maximumFractionDigits : 2 }).format(v);}
+function formaterbnsansvirgule(z){return Intl.NumberFormat('fr-FR',{ maximumFractionDigits : 0 }).format(z);}
           
 
 var formatbn = "";
@@ -322,7 +323,7 @@ function resultatbn(){
         qbn0 = qnb1;
         volbn0 = qnb2;
         rtblocnotes = qbn0 * volbn0;
-        if (qbn0 != ""){qbnF.innerHTML= Intl.NumberFormat().format(qnb1)} else {qbnF.innerHTML="0"};
+        if (qbn0 != ""){qbnF.innerHTML= formaterbnsansvirgule(qnb1)} else {qbnF.innerHTML="0"};
 
         if (checkBox === true) {formatbn= "A5";} // formatphotobn.className = "formatphotobn0" 
         else{formatbn = "A4";}  // formatphotobn.className = "formatphotobn1"  
