@@ -354,14 +354,14 @@ function resultatbn(){
         if (checkBox2 === true) 
         {
             labeldos.innerHTML = '<i class="fa-solid fa-circle-check"></i> Dos Collé'
-            labeldos.style.backgroundColor="rgba(23, 85, 184, 0.764)"
+            labeldos.style.backgroundColor="rgba(221, 255, 0, 0.5)"
             labeldos.style.color ="white"
             labelspirale.innerHTML = 'Spirales côté'
-            labelspirale.style.backgroundColor="rgba(23, 85, 184, 0)"
-            labelspirale.style.color ="rgba(23, 85, 184, 0.764)"
+            labelspirale.style.backgroundColor="rgba(221, 255, 184, 0)"
+            labelspirale.style.color ="rgba(255, 196, 0, 0.5)"
             labelspiralehaut.innerHTML = 'Spirales Haut'
-            labelspiralehaut.style.backgroundColor="rgba(23, 85, 184, 0)"
-            labelspiralehaut.style.color ="rgba(23, 85, 184, 0.764)"
+            labelspiralehaut.style.backgroundColor="rgba(221, 255, 184, 0)"
+            labelspiralehaut.style.color ="rgba(221, 255, 0, 0.5)"
 
 
             if (formatbn == "A5")
@@ -379,14 +379,14 @@ function resultatbn(){
         if (spirale === true)
         {
             labeldos.innerHTML = 'Dos Collé'
-            labeldos.style.backgroundColor="rgba(23, 85, 184, 0)"
-            labeldos.style.color ="rgba(23, 85, 184, 0.764)"
+            labeldos.style.backgroundColor="rgba(221, 255, 184, 0)"
+            labeldos.style.color ="rgba(221, 255, 0, 0.5)"
             labelspirale.innerHTML = '<i class="fa-solid fa-circle-check"></i> Spirales côté'
-            labelspirale.style.backgroundColor="rgba(23, 85, 184, 0.764)"
+            labelspirale.style.backgroundColor="rgba(221, 255, 0, 0.5)"
             labelspirale.style.color ="white"
             labelspiralehaut.innerHTML = 'Spirales Haut'
-            labelspiralehaut.style.backgroundColor="rgba(23, 85, 184, 0)"
-            labelspiralehaut.style.color ="rgba(23, 85, 184, 0.764)"
+            labelspiralehaut.style.backgroundColor="rgba(221, 255, 184, 0)"
+            labelspiralehaut.style.color ="rgba(221, 255, 0, 0.5)"
 
             
             if (formatbn == "A5") {xxreliure = qbn0 * 0.45}
@@ -398,13 +398,13 @@ function resultatbn(){
         if (spiralehaut === true)
         {
             labeldos.innerHTML = 'Dos Collé'
-            labeldos.style.backgroundColor="rgba(23, 85, 184, 0)"
-            labeldos.style.color ="rgba(23, 85, 184, 0.764)"
+            labeldos.style.backgroundColor="rgba(221, 255, 184, 0)"
+            labeldos.style.color ="rgba(221, 255, 0, 0.5)"
             labelspirale.innerHTML = 'Spirales côté'
-            labelspirale.style.backgroundColor="rgba(23, 85, 184, 0)"
-            labelspirale.style.color ="rgba(23, 85, 184, 0.764)"
+            labelspirale.style.backgroundColor="rgba(221, 255, 184, 0)"
+            labelspirale.style.color ="rgba(221, 255, 0, 0.5)"
             labelspiralehaut.innerHTML = '<i class="fa-solid fa-circle-check"></i> Spirales Haut'
-            labelspiralehaut.style.backgroundColor="rgba(23, 85, 184, 0.764)"
+            labelspiralehaut.style.backgroundColor="rgba(221, 255, 0, 0.5)"
             labelspiralehaut.style.color ="white"
             
             
