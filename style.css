@@ -184,21 +184,24 @@ body{margin: 0%;padding: 0%;}
     width: 96%;height: 650px;
     margin-top: 50px;position: absolute;top: 0%;left: 2%;user-select: none;
     background-color: rgba(255, 255, 255, 0.384);border-radius: 20px;box-shadow: 0px 1  px 6px rgba(0, 0, 0, 0.63);
+
 }
 .boxblocnotes0{transition-duration: 0.8s;margin-left: -400px;transform: scale(0); opacity: 0;} 
 .boxblocnotes0.opaque{margin-left: 0px;transform: scale(1);opacity: 1;}
 .boxblocnotes1{transition-duration: 0.8s;margin-left: 0px;transform: scale(1); opacity: 1;} 
 .boxblocnotes1.opaque{margin-left: -400px;transform: scale(0);opacity: 0;}
 
-#bnp1{background-color: rgba(255, 255, 255, 0);}
+                    #bnp1{background-color: rgba(255, 255, 255, 0);
+                        display: flex; flex-wrap: wrap;justify-content: space-around;align-content: space-around;}
 
 
 #resultatfinalbn
 {
     width: 100%;height: 22%;
-    margin-left: 0px;padding: 0%;margin-top: 15px;
+    margin-left: 0px;padding: 0%;margin-top: 10px;
     background-color: rgba(255, 255, 255, 0.221);
     display: flex; justify-content: space-between;
+    border-top-left-radius: 10px;border-top-right-radius: 10px;
 }
 
 .f1, .f2, .f3 {margin: 1%;border-radius: 5px;display: block;
@@ -215,17 +218,18 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 .quantitevolumeblocnotes
 {
     width: 100%;height: 25%;
-    margin-left: 0px;padding: 0%;margin-top: 10px;
+    margin-left: 0px;padding: 0%;margin-top: 0px;
     background-color: rgba(255, 255, 255, 0.221);
     display: flex; justify-content: space-around;justify-items: center;align-content: center;
+    border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;
 }
 
 .entrerquantitebn{width: 40%;text-align: center;}
 .entrervolumebn{width: 40%;text-align: center;}
 
-#qnb1, #qnb2 {width: 91%;background-color: rgba(236, 236, 236, 0.548);border-color: rgba(128, 128, 128, 0.154);
+#qnb1, #qnb2 {width: 91%;background-color: rgba(255, 255, 255, 0.548);border-color: rgba(255, 255, 255, 0.154);
               font-size: 16pt;font-family: Arial; color: rgb(23, 85, 184);font-weight: bold;text-align: center;
-              position: relative;top: 10px;
+              position: relative;top: 10px;border-radius: 5px;
              }
 
 .titrebn2{text-align: center;margin: 0;padding: 0;font-family: Arial;font-size: 14pt;color: rgb(23, 85, 184);
@@ -233,19 +237,21 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
          }
 
 .photobn{width: 300px; height: 150px;}
-.photobn2{position: relative;top: 10px;left: 10px;width: 200px;}
+
+.photobn2{position: relative;top: 0px;left: 0px;width: 150px;}
+.boxphotoblocnote{display: flex;} /*border: 1px solid black;*/ 
+.boxcaracteriqtiques{display: flex;justify-content: space-around;align-content: center;flex-wrap: wrap;}
+#c1,#c2,#c3,#c4,#c5{font-size: Bold;font-family: Arial;
+                    display: flex;justify-content: space-around;align-content: center;
+                    margin: 10px;font-size: 10pt;
+                    }
 
 #bnp2
 {
-    background-color: rgba(255, 255, 255, 0);font-family: Arial; 
-    display: flex;flex-direction: column;justify-content: space-between;
-    /* border: 1px solid black; à enlever */
+    font-family: Arial; 
+    display: flex;flex-direction: column;justify-content: space-around;
 }
-.titrebn4{color: rgb(23, 85, 184);text-align: center;width: 100%;display: inline-block;font-weight: bold;}
 
-
-#impressionint{font-size: 14pt; background-color: rgba(255, 255, 255, 0.247);}
-#impressioncouv{font-size: 14pt; background-color: rgba(255, 255, 255, 0.247);}
 
 
 
@@ -305,13 +311,27 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
     display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
 
 
-.boximpression{display: flex;justify-content: space-around;}
-.impressioninterieurblocnotes{border: 1px solid black;width: 45%;}
-.impressioncouvertureblocnotes{border: 1px solid black;width: 45%;}
+
+.titrebn4{color: rgb(23, 85, 184);text-align: center;width: 100%;display: inline-block;font-weight: bold;}
+
+
+
+.boximpression{display: flex;flex-wrap: wrap;justify-content: center;}
+.impressioninterieurblocnotes{background-color: rgba(255, 255, 255, 0.179);
+                             width: 37%;margin-left: 5px;margin-right: 5px;
+                             border-radius: 10px;
+                             }
+.impressioncouvertureblocnotes{background-color: rgba(255, 255, 255, 0.179);
+                               width: 37%;margin-left: 5px;margin-right: 5px;
+                               border-radius: 10px;
+                              }
 #impressionint{width: 100%;}
 #impressioncouv{width: 100%;}
 
-
+#impressionint{font-size: 14pt; background-color: rgba(255, 255, 255, 0.474);
+    border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+#impressioncouv{font-size: 14pt; background-color: rgba(255, 255, 255, 0.474);
+    border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
 
 
 
@@ -627,6 +647,8 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 /* Box Devis*/
 
+
+
 #labelradio1{border: 3px solid rgba(7, 117, 115, 0.905);font-size: 10pt; font-weight: bold;padding: 5px;
              background-color: rgba(7, 117, 115, 0.905);color: white;width: 35%;border-radius: 5px;
              display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;
@@ -638,14 +660,14 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 
 
-#labelspirale{border: 3px solid rgb(23, 85, 184, 0.764);font-size: 10pt; font-weight: bold;padding: 5px;
+#labelspirale{border: 3px solid rgba(221, 255, 0, 0.5);font-size: 10pt; font-weight: bold;padding: 5px;
               background-color: rgb(23, 85, 184, 0.764);color: white;width: 35%;border-radius: 5px;
               display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;
              }    
-#labelspiralehaut{border: 3px solid rgb(23, 85, 184, 0.764);font-size: 10pt; font-weight: bold;padding: 5px;
+#labelspiralehaut{border: 3px solid rgba(221, 255, 0, 0.5);font-size: 10pt; font-weight: bold;padding: 5px;
                  background-color: #71cc0100;color: rgb(23, 85, 184, 0.764);width: 35%;border-radius: 5px;
                   display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;}
-#labeldos{border: 3px solid rgb(23, 85, 184, 0.764);font-size: 10pt; font-weight: bold;padding: 5px;
+#labeldos{border: 3px solid rgba(221, 255, 0, 0.5);font-size: 10pt; font-weight: bold;padding: 5px;
           background-color: #71cc0100;color: rgb(23, 85, 184, 0.764);width: 35%;border-radius: 5px;
           display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
 .ss{border: 3px solid rgb(23, 85, 184, 0);font-size: 10pt; font-weight: bold;padding: 5px;
@@ -670,9 +692,9 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
     display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
 
 
-.boximpression{display: flex;justify-content: space-around;}
-.impressioninterieurblocnotes{width: 45%;}
-.impressioncouvertureblocnotes{width: 45%;}
+.boximpression{display: flex;justify-content: center;}
+.impressioninterieurblocnotes{width: 38%;}
+.impressioncouvertureblocnotes{width: 38%;}
 #impressionint{width: 100%;}
 #impressioncouv{width: 100%;}
 #impressionint{font-size: 12pt; background-color: rgba(255, 255, 255, 0.247);}

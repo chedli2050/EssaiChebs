@@ -358,7 +358,7 @@ function resultatbn(){
             labeldos.style.color ="white"
             labelspirale.innerHTML = 'Spirales côté'
             labelspirale.style.backgroundColor="rgba(221, 255, 184, 0)"
-            labelspirale.style.color ="rgba(255, 196, 0, 0.5)"
+            labelspirale.style.color ="rgba(221, 255, 0, 0.5)"
             labelspiralehaut.innerHTML = 'Spirales Haut'
             labelspiralehaut.style.backgroundColor="rgba(221, 255, 184, 0)"
             labelspiralehaut.style.color ="rgba(221, 255, 0, 0.5)"
