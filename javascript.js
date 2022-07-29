@@ -328,6 +328,11 @@ function resultatbn(){
         var labelradio1 = document.getElementById('labelradio1');
         var labelradio2 = document.getElementById('labelradio2');
 
+        var formatphotobn = document.getElementById('f4');
+        var impressioncouvphotobn = document.getElementById('f5');
+        var impressionintphotobn = document.getElementById('f6');
+
+
         if (checkBox === true) {formatbn= "A5"
                                 labelradio1.innerHTML = '<i class="fa-solid fa-circle-check"></i> Format A5'
                                 labelradio2.innerHTML = 'Format A4'
@@ -335,7 +340,7 @@ function resultatbn(){
                                 labelradio1.style.color ="white"
                                 labelradio2.style.backgroundColor="rgba(7, 117, 115, 0)"
                                 labelradio2.style.color ="rgba(7, 117, 115, 0.905)"
-                                } // formatphotobn.className = "formatphotobn0" 
+                                formatphotobn.className = "formatphotobn0" }
         else{formatbn = "A4";
                                 labelradio1.innerHTML = 'Format A5'
                                 labelradio2.innerHTML = '<i class="fa-solid fa-circle-check"></i> Format A4'
@@ -343,7 +348,7 @@ function resultatbn(){
                                 labelradio2.style.color ="white"
                                 labelradio1.style.backgroundColor="rgba(7, 117, 115, 0)"
                                 labelradio1.style.color ="rgba(7, 117, 115, 0.905)"
-            }  // formatphotobn.className = "formatphotobn1"  
+                                formatphotobn.className = "formatphotobn1"  } 
         
         var xxreliure = 0;
         var labeldos = document.getElementById('labeldos');
@@ -657,6 +662,63 @@ function resultatbn(){
                          prixunitaire.innerHTML ="0,000 TND"
 
                         }
+
+                        if(spirale === true)
+                        {    
+                            if(impressioncouv == "1"){impressioncouvphotobn.className="impressionphotobn0"};
+                            if(impressioncouv == "2"){impressioncouvphotobn.className="impressionphotobn1"};
+                            if(impressioncouv == "3"){impressioncouvphotobn.className="impressionphotobn2"};
+                            if(impressioncouv == "4"){impressioncouvphotobn.className="impressionphotobn3"};
+                
+                            if(impressionint == "1"){impressionintphotobn.className="impressionintphtobn0"};
+                            if(impressionint == "2"){impressionintphotobn.className="impressionintphtobn1"};
+                            if(impressionint == "3"){impressionintphotobn.className="impressionintphtobn2"};
+                            if(impressionint == "4"){impressionintphotobn.className="impressionintphtobn3"};
+                            if(impressionint == "5"){impressionintphotobn.className="impressionintphtobn4"};
+                            if(impressionint == "6"){impressionintphotobn.className="impressionintphtobn5"};
+                            if(impressionint == "7"){impressionintphotobn.className="impressionintphtobn6"};
+                            if(impressionint == "8"){impressionintphotobn.className="impressionintphtobn7"};
+                
+                        }
+                
+                        if(spiralehaut === true)
+                        {    
+                            if(impressioncouv == "1"){impressioncouvphotobn.className="impressionphotobn4"};
+                            if(impressioncouv == "2"){impressioncouvphotobn.className="impressionphotobn5"};
+                            if(impressioncouv == "3"){impressioncouvphotobn.className="impressionphotobn6"};
+                            if(impressioncouv == "4"){impressioncouvphotobn.className="impressionphotobn7"};
+                
+                            if(impressionint == "1"){impressionintphotobn.className="impressionintphtobn8"};
+                            if(impressionint == "2"){impressionintphotobn.className="impressionintphtobn9"};
+                            if(impressionint == "3"){impressionintphotobn.className="impressionintphtobn10"};
+                            if(impressionint == "4"){impressionintphotobn.className="impressionintphtobn11"};
+                            if(impressionint == "5"){impressionintphotobn.className="impressionintphtobn12"};
+                            if(impressionint == "6"){impressionintphotobn.className="impressionintphtobn13"};
+                            if(impressionint == "7"){impressionintphotobn.className="impressionintphtobn14"};
+                            if(impressionint == "8"){impressionintphotobn.className="impressionintphtobn15"};
+                        }
+                        //photos caractérique Bloc Notes
+
+                        if(checkBox2 === true)
+                        {    
+                            if(impressioncouv == "1"){impressioncouvphotobn.className="impressionphotobn8"};
+                            if(impressioncouv == "2"){impressioncouvphotobn.className="impressionphotobn9"};
+                            if(impressioncouv == "3"){impressioncouvphotobn.className="impressionphotobn10"};
+                            if(impressioncouv == "4"){impressioncouvphotobn.className="impressionphotobn11"};
+                
+                            if(impressionint == "1"){impressionintphotobn.className="impressionintphtobn16"};
+                            if(impressionint == "2"){impressionintphotobn.className="impressionintphtobn17"};
+                            if(impressionint == "3"){impressionintphotobn.className="impressionintphtobn18"};
+                            if(impressionint == "4"){impressionintphotobn.className="impressionintphtobn19"};
+                            if(impressionint == "5"){impressionintphotobn.className="impressionintphtobn20"};
+                            if(impressionint == "6"){impressionintphotobn.className="impressionintphtobn21"};
+                            if(impressionint == "7"){impressionintphotobn.className="impressionintphtobn22"};
+                            if(impressionint == "8"){impressionintphotobn.className="impressionintphtobn23"};
+                        }
+
+
+
+
 
 
 }

@@ -208,7 +208,7 @@ body{margin: 0%;padding: 0%;}
                display: flex;justify-content: center ;flex-direction: column;align-content: center;
                 }
 .f1{background-color: rgba(8, 49, 171, 0.132);width: 20%;}
-.f2{background-color: rgba(81, 91, 122, 0.232);width: 35%;}
+.f2{background-color: rgba(73, 85, 120, 0.232);width: 35%;}
 .f3{background-color: rgba(15, 96, 236, 0.408);width: 40%;}
 
 #qbnF, #prixunitaire, #prixtotal{text-align: center;font-family: Arial;margin: 0;padding: 0;
@@ -238,13 +238,75 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 .photobn{width: 300px; height: 150px;}
 
-.photobn2{position: relative;top: 0px;left: 0px;width: 150px;}
-.boxphotoblocnote{display: flex;} /*border: 1px solid black;*/ 
-.boxcaracteriqtiques{display: flex;justify-content: space-around;align-content: center;flex-wrap: wrap;}
-#c1,#c2,#c3,#c4,#c5{font-size: Bold;font-family: Arial;
-                    display: flex;justify-content: space-around;align-content: center;
-                    margin: 10px;font-size: 10pt;
-                    }
+
+
+.boxphotoblocnote{display: flex;justify-content: space-between;align-content: center;flex-wrap: wrap;
+                  width: 100%;
+                 }
+
+.photobn2{position: relative;top: 0px;left: 0px;width: 20%;}
+        
+.photosblocnotes{width: 50%;height: 80%;position: relative;top: 10%;right: 5%; background-color: rgba(255, 255, 255, 0.252);
+                 border-radius: 20px; box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.481);
+                 display: flex;justify-content: space-around;align-content: center;flex-wrap: wrap;
+                }
+
+        #f4{width: 25%; height: 100%;
+            background-size: contain; background-repeat: no-repeat; background-position: center;       
+            }
+            .formatphotobn0{background-image:url(photos/format1.png);}
+            .formatphotobn1{background-image:url(photos/format2.png);}
+        
+        #f5{width: 25%; height: 100%;
+            background-size: contain; background-repeat: no-repeat; background-position: center; 
+           }   
+
+
+        .impressionphotobn0{background-image:url(photos/couv1.png);}    
+        .impressionphotobn1{background-image:url(photos/couv2.png);}    
+        .impressionphotobn2{background-image:url(photos/couv3.png);}    
+        .impressionphotobn3{background-image:url(photos/couv4.png);} 
+
+        .impressionphotobn4{background-image:url(photos/couv5.png);}    
+        .impressionphotobn5{background-image:url(photos/couv6.png);}    
+        .impressionphotobn6{background-image:url(photos/couv7.png);}    
+        .impressionphotobn7{background-image:url(photos/couv8.png);} 
+        
+        .impressionphotobn8{background-image:url(photos/couv9.png);}    
+        .impressionphotobn9{background-image:url(photos/couv10.png);}    
+        .impressionphotobn10{background-image:url(photos/couv11.png);}    
+        .impressionphotobn11{background-image:url(photos/couv12.png);} 
+
+    #f6{width: 25%; height: 100%;
+    background-size: contain; background-repeat: no-repeat; background-position: center; }    
+        .impressionintphtobn0{background-image:url(photos/int1.png);}
+        .impressionintphtobn1{background-image:url(photos/int2.png);}
+        .impressionintphtobn2{background-image:url(photos/int3.png);}
+        .impressionintphtobn3{background-image:url(photos/int4.png);}
+        .impressionintphtobn4{background-image:url(photos/int5.png);}
+        .impressionintphtobn5{background-image:url(photos/int6.png);}
+        .impressionintphtobn6{background-image:url(photos/int7.png);}
+        .impressionintphtobn7{background-image:url(photos/int8.png);}
+
+        .impressionintphtobn8{background-image:url(photos/int9.png);}
+        .impressionintphtobn9{background-image:url(photos/int10.png);}
+        .impressionintphtobn10{background-image:url(photos/int11.png);}
+        .impressionintphtobn11{background-image:url(photos/int12.png);}
+        .impressionintphtobn12{background-image:url(photos/int13.png);}
+        .impressionintphtobn13{background-image:url(photos/int14.png);}
+        .impressionintphtobn14{background-image:url(photos/int15.png);}
+        .impressionintphtobn15{background-image:url(photos/int16.png);}
+
+        .impressionintphtobn16{background-image:url(photos/int17.png);}
+        .impressionintphtobn17{background-image:url(photos/int18.png);}
+        .impressionintphtobn18{background-image:url(photos/int19.png);}
+        .impressionintphtobn19{background-image:url(photos/int20.png);}
+        .impressionintphtobn20{background-image:url(photos/int21.png);}
+        .impressionintphtobn21{background-image:url(photos/int22.png);}
+        .impressionintphtobn22{background-image:url(photos/int23.png);}
+        .impressionintphtobn23{background-image:url(photos/int24.png);}
+
+
 
 #bnp2
 {
