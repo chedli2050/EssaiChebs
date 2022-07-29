@@ -643,7 +643,14 @@ function resultatbn(){
             pellcouv.innerHTML = "Coût Total Finition Couv (HT) : <span class='rtbnb2'>" + formater(finitioncouv.toFixed(3))+"</span></p>";
             reliureunitaire.innerHTML = "Coût unitaire de la Reliure (HT) : <span class='rtbnblue'>" + formater((xxreliure/qbn0).toFixed(3))+"</span></p>";
             reliure.innerHTML = "Coût Total de la Reliure (HT) : <span class='rtbnb2'>" + formater(xxreliure.toFixed(3))+"</span></p>";
-            prixtotal.innerHTML = formater((prixt.toFixed(3)));
+            if(prixt >999999){
+                                prixtotal.innerHTML = formater((prixt.toFixed(3)));
+                                prixtotal.style.fontSize = '12pt';
+                             }
+                             else{prixtotal.innerHTML = formater((prixt.toFixed(3)));
+                                prixtotal.style.fontSize = '14pt';
+
+                             }
             prixunitaire.innerHTML = formater((prixt/qbn0).toFixed(3).toLocaleUpperCase());
             }
                          else

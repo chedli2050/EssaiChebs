@@ -210,8 +210,8 @@ body{margin: 0%;padding: 0%;}
                display: flex;justify-content: center ;flex-direction: column;align-content: center;
                 }
 .f1{background-color: rgba(5, 66, 248, 0.132);width: 20%;}
-.f2{background-color: rgb(0, 162, 231);width: 35%;}
-.f3{background-color: rgba(15, 96, 236, 0.821);width: 40%;color: white;}
+.f2{background-color: rgb(0, 162, 231);width: 34%;}
+.f3{background-color: rgba(15, 96, 236, 0.821);width: 42%;color: white;}
 
 #qbnF, #prixunitaire, #prixtotal{text-align: center;font-family: Arial;margin: 0;padding: 0;
 font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
