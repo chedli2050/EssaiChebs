@@ -482,7 +482,7 @@ function resultatbn(){
 
         if (checkboxsans === true)
         {
-            labelsans.innerHTML = '<i class="fa-solid fa-circle-check"></i> Sans Pélliculage'
+            labelsans.innerHTML = '<i class="fa-solid fa-circle-check"></i> Sans Pélli.'
             labelsans.style.backgroundColor="rgba(13, 128, 190, 0.961)"
             labelsans.style.color ="white"
             
@@ -502,7 +502,7 @@ function resultatbn(){
         };
         if (checkboxpelr === true)
         {
-            labelsans.innerHTML = 'Sans Pélliculage'
+            labelsans.innerHTML = 'Sans Pélli.'
             labelsans.style.backgroundColor="rgba(13, 128, 190, 0)"
             labelsans.style.color ="rgba(13, 128, 190, 0.961)"
             
@@ -522,7 +522,7 @@ function resultatbn(){
         };
         if (checkboxpelrv === true)
         {
-            labelsans.innerHTML = 'Sans Pélliculage'
+            labelsans.innerHTML = 'Sans Pélli.'
             labelsans.style.backgroundColor="rgba(13, 128, 190, 0)"
             labelsans.style.color ="rgba(13, 128, 190, 0.961)"
             
@@ -530,7 +530,7 @@ function resultatbn(){
             labelr.style.backgroundColor="rgba(13, 128, 190, 0)"
             labelr.style.color ="rgba(13, 128, 190, 0.961)"
             
-            labelrv.innerHTML = '<i class="fa-solid fa-circle-check"></i> Pélliculage RV'
+            labelrv.innerHTML = '<i class="fa-solid fa-circle-check"></i> Pélli. RV'
             labelrv.style.backgroundColor="rgba(13, 128, 190, 0.961)"
             labelrv.style.color ="white"
 
@@ -542,7 +542,7 @@ function resultatbn(){
         };
         if (checkboxcontre === true)
         {
-            labelsans.innerHTML = 'Sans Pélliculage'
+            labelsans.innerHTML = 'Sans Pélli.'
             labelsans.style.backgroundColor="rgba(13, 128, 190, 0)"
             labelsans.style.color ="rgba(13, 128, 190, 0.961)"
             

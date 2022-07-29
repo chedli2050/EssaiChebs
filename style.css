@@ -6,7 +6,7 @@ body{margin: 0%;padding: 0%;}
 #startscreen{background-color: white;
              display: flex;justify-content: center;flex-wrap: wrap;align-content:  center;
              position: absolute;
-            z-index: 1000000004;
+            z-index: 10001;
             
             }
     .logobaya
@@ -70,7 +70,7 @@ body{margin: 0%;padding: 0%;}
     #barrehaut {
         position: fixed;top: 0;left: 0;background-color: black;
         width:100%; height: 40px;display: flex;justify-content: flex-start;align-items: center;
-        user-select: none;font-family: Arial;z-index: 10000003;}
+        user-select: none;font-family: Arial;z-index: 90;}
 
         #menu
             {
@@ -84,7 +84,7 @@ body{margin: 0%;padding: 0%;}
         .menu0{transition-duration: 0.8s;margin-left: -400px;transform: scale(0); opacity: 0;} 
         .menu0.opaque{margin-left: 0px;transform: scale(1);opacity: 1;}
 
-        #logobarrehaut{width: 33px;height: 33px;margin-right: 30px;margin-left: 20px;z-index: 10000010;}
+        #logobarrehaut{width: 33px;height: 33px;margin-right: 30px;margin-left: 20px;z-index: 92;}
         #logobarrehaut:hover{opacity: 0.7;}
 
         #sommairebt{color: white; font-size : 12pt;width: 140px;text-align: center;height: 25px;padding-top: 10px;
@@ -125,7 +125,7 @@ body{margin: 0%;padding: 0%;}
         #titremobile{color: white; font-weight: bolder;font-family: Arial;
             font-size: 16pt ;
             position: fixed;top: 20px;left: 20px;user-select: none;
-            z-index: 10000002;display: none;
+            z-index: 93;display: none;
            }
         /*Fin Menu*/
 
@@ -247,7 +247,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
                   width: 100%;height: 50%;
                  }
 
-.photobn2{position: relative;top: 0px;left: 0px;width: 20%;}
+.photobn2{position: relative;top: 0px;left: 0px;width: 20%;object-fit: cover;}
         
 .photosblocnotes{width: 60%;height: 80%;position: relative;top: 10%;right: 5%; background-color: rgba(255, 255, 255, 0.252);
                  border-radius: 20px; box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.481);
@@ -494,7 +494,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
         .menu0{transition-duration: 0.8s;margin-left: -400px; opacity: 0;} 
         .menu0.opaque{margin-left: 0px;opacity: 1;}
 
-        #logobarrehaut{width: 33px;height: 33px;margin-right: 30px;margin-left: 20px;z-index: 10000010;}
+        #logobarrehaut{width: 33px;height: 33px;margin-right: 30px;margin-left: 20px;z-index: 91;}
         #logobarrehaut:hover{opacity: 0.7;}
 
         #sommairebt{color: white; font-size : 10pt;width: 120px;text-align: center;height: 25px;padding-top: 10px;
@@ -541,7 +541,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
     #barrehaut {
         position: fixed;top: 0;left: 0;background-color: black;
         width:100%; height: 60px;display: flex;justify-content: space-between;align-items: center;
-        user-select: none;z-index: 100000000;}   
+        user-select: none;z-index: 90;}   
     
     #menu{display: none;}
     #logobarrehaut{display: none;}
@@ -552,7 +552,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
            position: fixed;top: 0px;left: 0px;
            background-color: black;font-family: Arial;
            display: flex;justify-content: flex-start ;align-items: flex-start;flex-direction: column;
-           z-index: 100000003;user-select: none;overflow: hidden;
+           z-index: 92;user-select: none;overflow: hidden;
            width: 35%;height: 60px;box-shadow: 0px 0px 5px rgba(61, 61, 61, 0);
            transition: all 0.1s;
        }
@@ -563,7 +563,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
         position: fixed;top: 0px;left: 0px;
         background-color: black;font-family: Arial;
         display: flex;justify-content: flex-start ;align-items: flex-start;flex-direction: column;
-        z-index: 10000003;user-select: none;overflow: hidden;
+        z-index: 92;user-select: none;overflow: hidden;
         height: fit-content; width: fit-content;transition: all 0.1s;
     }
     .menu21.opaque{box-shadow: 0px 0px 5px rgba(61, 61, 61, 0.825);width: 35%;height: 60px;}
@@ -573,7 +573,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
         #titremobile{color: white; font-weight: bolder;font-family: Arial;
         font-size: 16pt ;
         position: relative;top: 0px;left: 10px;user-select: none;
-        z-index: 10000002;display: block;}
+        z-index: 93;display: block;}
 
         #titremobile:hover{text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.773);}
         
