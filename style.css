@@ -570,7 +570,11 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 }
 
-
+/* -----------------------------------Code responsive pour mobile----------------------------------- */
+/* -----------------------------------Code responsive pour mobile----------------------------------- */
+/* -----------------------------------Code responsive pour mobile----------------------------------- */
+/* -----------------------------------Code responsive pour mobile----------------------------------- */
+/* -----------------------------------Code responsive pour mobile----------------------------------- */
 
 @media screen and (max-width : 720px)
 {
@@ -604,6 +608,9 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
         height: fit-content; width: fit-content;transition: all 0.1s;
     }
     .menu21.opaque{box-shadow: 0px 0px 5px rgba(61, 61, 61, 0.825);width: 35%;height: 60px;}
+
+
+
     
     /*Fin Déroulement Menu Mobile*/
 
@@ -614,29 +621,29 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
         #titremobile:hover{text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.773);}
         
-        #sommairebtm{color: white;height: 38px;
+        #sommairebtm{color: white;height: 38px;display: block;width: 100%;
              font-size : 14pt;margin-left: 15px;margin-top: 5px;border-left: 5px solid rgba(255, 0, 0, 0);
              padding-left: 10px;padding-top: 12px;}
         #sommairebtm:hover{text-shadow: 0px 0px 5px white;border-left: 5px solid red;}
         
-        #blocbtm{color: white;height: 38px;
+        #blocbtm{color: white;height: 38px;display: block;width: 100%;
             font-size : 14pt;margin-left: 15px;border-left: 5px solid rgba(255, 0, 0, 0);
             padding-left: 10px;padding-top: 12px;}
         #blocbtm:hover{text-shadow: 0px 0px 5px white;border-left: 5px solid red;}
 
-        #livresbtm{color: white;height: 38px;
+        #livresbtm{color: white;height: 38px;display: block;width: 100%;
             font-size : 14pt;margin-left: 15px;border-left: 5px solid rgba(255, 0, 0, 0);
             padding-left: 10px;padding-top: 12px;}
         #livresbtm:hover{text-shadow: 0px 0px 5px white;border-left: 5px solid red;}
-        #flyersbtm{color: white;height: 38px;
+        #flyersbtm{color: white;height: 38px;display: block;width: 100%;
             font-size : 14pt;margin-left: 15px;border-left: 5px solid rgba(255, 0, 0, 0);
             padding-left: 10px;padding-top: 12px;}
         #flyersbtm:hover{text-shadow: 0px 0px 5px white;border-left: 5px solid red;}
-        #portedocbtm{color: white;height: 38px;
+        #portedocbtm{color: white;height: 38px;display: block;width: 100%;
             font-size : 14pt;margin-left: 15px;border-left: 5px solid rgba(255, 0, 0, 0);
             padding-left: 10px;padding-top: 12px;margin-right: 20px;}
         #portedocbtm:hover{text-shadow: 0px 0px 5px white;border-left: 5px solid red;}
-        #parametragebtm{color: white;height: 38px;
+        #parametragebtm{color: white;height: 38px;display: block;width: 100%;
             font-size : 14pt;margin-left: 15px;border-left: 5px solid rgba(255, 0, 0, 0);
             padding-left: 10px;padding-top: 12px;}
         #parametragebtm:hover{text-shadow: 0px 0px 5px white;border-left: 5px solid red;}
