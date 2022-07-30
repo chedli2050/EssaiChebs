@@ -64,6 +64,12 @@ body{margin: 0%;padding: 0%;}
     
      /* --------------------------------Fin Start Screen---------------------------------------------------*/
 
+    #englobante{width: 0px;height: 0px;background-color: rgba(255, 0, 0, 0.346);position: fixed;bottom: 0px;left: 0px;
+                z-index: 111;
+                }
+
+
+
 
      /*Menu*/
     body{background-image: url(photos/back.png);background-repeat: no-repeat;background-size: 100% 1400px;}

@@ -7,6 +7,7 @@ function ajustement()
 {
 startscreen.style.width = window.innerWidth +'px';
 startscreen.style.height = window.innerHeight + 'px';
+
 }
 ajustement()
 
@@ -816,8 +817,29 @@ checkboxpelrvchange.addEventListener('keyup',resultatbn);
 checkboxcontrechange.addEventListener('change',resultatbn);
 checkboxcontrechange.addEventListener('keyup',resultatbn);
 
+// var hauteurtoutdoc = document.documentElement.scrollHeight; pour savoir la longeur total de la page
 
+var englobante = document.getElementById('englobante');
+var controleecrandechoix = 0;
+function afficheecrandechoix1()
+{
+englobante.style.width = innerWidth + "px";
+englobante.style.height = innerHeight + "px";
+controleecrandechoix = 1;
+}
 
+function redimentionner()
+{
+    if (controleecrandechoix == 1)
+    {
+        englobante.style.width = innerWidth + "px";
+        englobante.style.height = innerHeight + "px";
+    }
+}
+
+var f3=document.getElementById('f3');
+f3.addEventListener('dblclick',afficheecrandechoix1);
+window.addEventListener("resize",redimentionner);
 
 
 //---------------------------------------Fin Devis bloc notes------------------------------------
