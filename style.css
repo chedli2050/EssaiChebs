@@ -332,28 +332,28 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 #labelradio1{border: 3px solid rgba(7, 117, 115, 0.905);font-size: 14pt; font-weight: bold;padding: 5px;
              background-color: rgba(7, 117, 115, 0.905);color: white;width: 35%;border-radius: 20px;
-             display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;
+             display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;transition: 0.1s;
             }
 #labelradio2{border: 3px solid rgba(7, 117, 115, 0.905);font-size: 14pt; font-weight: bold;padding: 5px;
              background-color: #71cc0100;color: rgba(7, 117, 115, 0.905);width: 35%;border-radius: 20px;
-             display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;}
+             display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;transition: 0.1s;}
 
 
 
 
 .boxspiralehautdos{display: flex;flex-wrap: wrap;justify-content: center;}
 
-#labelspirale{border: 3px solid rgba(143, 0, 0, 0.863);font-size: 14pt; font-weight: bold;padding: 5px;
+#labelspirale{border: 3px solid rgb(244, 81, 30);font-size: 14pt; font-weight: bold;padding: 5px;
               background-color: rgb(23, 85, 184, 0);color: white;width: 35%;border-radius: 20px;
-              display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;
+              display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;transition: 0.1s;
              }    
-#labelspiralehaut{border: 3px solid rgba(143, 0, 0, 0.863);font-size: 14pt; font-weight: bold;padding: 5px;
+#labelspiralehaut{border: 3px solid rgb(244, 81, 30);font-size: 14pt; font-weight: bold;padding: 5px;
                  background-color: #71cc0100;color: rgb(23, 85, 184, 0.764);width: 35%;border-radius: 20px;
-                  display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;}
-#labeldos{border: 3px solid rgba(143, 0, 0, 0.863);font-size: 14pt; font-weight: bold;padding: 5px;
+                  display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;transition: 0.1s;}
+#labeldos{border: 3px solid rgb(244, 81, 30);font-size: 14pt; font-weight: bold;padding: 5px;
           background-color: #71cc0100;color: rgb(23, 85, 184, 0.764);width: 35%;border-radius: 20px;
-          display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
-.ss{border: 3px solid rgba(255, 196, 0, 0);font-size: 14pt; font-weight: bold;padding: 5px;
+          display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;transition: 0.1s;}
+.ss{border: 3px solid rgba(255, 196, 0, 0);font-size: 14pt; font-weight: bold;padding: 5px;transition: 0.1s;
     background-color:rgba(23, 85, 184, 0);color:rgba(255, 196, 0, 0);width: 35%;border-radius: 20px;
     display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
 
@@ -363,17 +363,17 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 #labelsans{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 14pt; font-weight: bold;padding: 5px;
     background-color: rgba(13, 128, 190, 0.961);color: white;width: 35%;border-radius: 20px;
-    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;
+    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;transition: 0.1s;
    }    
 #labelr{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 14pt; font-weight: bold;padding: 5px;
     background-color: #71cc0100;color: rgba(13, 128, 190, 0.961);width: 35%;border-radius: 20px;
-    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;}
+    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;transition: 0.1s;}
 #labelrv{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 14pt; font-weight: bold;padding: 5px;
     background-color: #71cc0100;color: rgba(13, 128, 190, 0.961);width: 35%;border-radius: 20px;
-    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
+    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;transition: 0.1s;}
 #labelcontre{border: 3px solid rgba(13, 128, 190, 0.961);font-size: 14pt; font-weight: bold;padding: 5px;
     background-color: #71cc0100;color: rgba(13, 128, 190, 0.961);width: 35%;border-radius: 20px;
-    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
+    display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;transition: 0.1s;}
 
 
 
@@ -762,14 +762,14 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 
 
-#labelspirale{border: 3px solid rgba(143, 0, 0, 0.863);font-size: 12pt; font-weight: bold;padding: 5px;
+#labelspirale{border: 3px solid rgb(244, 81, 30);font-size: 12pt; font-weight: bold;padding: 5px;
               background-color: rgb(23, 85, 184, 0.764);color: white;width: 35%;border-radius: 20px;
               display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;
              }    
-#labelspiralehaut{border: 3px solid rgba(143, 0, 0, 0.863);font-size: 12pt; font-weight: bold;padding: 5px;
+#labelspiralehaut{border: 3px solid rgb(244, 81, 30);font-size: 12pt; font-weight: bold;padding: 5px;
                  background-color: #71cc0100;color: rgb(23, 85, 184, 0.764);width: 35%;border-radius: 20px;
                   display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;}
-#labeldos{border: 3px solid rgba(143, 0, 0, 0.863);font-size: 12pt; font-weight: bold;padding: 5px;
+#labeldos{border: 3px solid rgb(244, 81, 30);font-size: 12pt; font-weight: bold;padding: 5px;
           background-color: #71cc0100;color: rgb(23, 85, 184, 0.764);width: 35%;border-radius: 20px;
           display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
 .ss{border: 3px solid rgb(23, 85, 184, 0);font-size: 12pt; font-weight: bold;padding: 5px;
