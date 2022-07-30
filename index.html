@@ -95,7 +95,6 @@
                     <p id="prixunitaire">0.000 DT</p>
                 </div>
                 <div class="f3" id="f3">
-                    
                     <p class="titrebn">Prix Total HT</p>
                     <p id="prixtotal">11 110.000 DT</p>
                 </div>
@@ -105,12 +104,25 @@
 
         <div class="quantitevolumeblocnotes">
                 <div class="entrerquantitebn">
-                    <label for="qbn1" id="labelqnb1" class="titrebn2">Quantité</label><br>
-                    <input type="number" name="qbn1" id="qnb1" min="0" value="10" step="10" max="100000"><br>
+                    <!-- <label for="qbn1" id="labelqnb1" class="titrebn2">Quantité</label><br> -->
+                    <div class="qv">
+                       <span class="sqv">Q</span> 
+                    </div>
+                    <div id="divinputquantite">
+                        <input type="number" name="qbn1" id="qnb1" min="0" value="10" step="10" max="100000"><br>
+                    </div>    
                 </div>
                 <div class="entrervolumebn">
-                    <label for="qnb2" id="labelqnb2" class="titrebn2">Volume</label><br>
-                    <input type="number" name="qnb2" min="1" max="250" id="qnb2" value="45"> 
+                    <!-- <label for="qnb2" id="labelqnb2" class="titrebn2">Volume</label><br> -->
+                    <div class="qv">
+                        <span class="sqv">V</span> 
+                    </div>
+                    <div id="divinputvolume">
+                        <input type="number" name="qnb2" min="1" max="250" id="qnb2" value="45"> 
+                    </div>
+                </div>
+                <div id="boutonchoiximpression">
+                    <span class="imprssionbnchoix">Impression</span>
                 </div>
         </div>   
        
@@ -223,8 +235,19 @@
         
     </Div>
     <div id="englobante">
-        <p>Impression Numérique</p>
-        <p>Impression Offset</p>
+        <div id="choiximp">
+            <h2>Interieur</h2>
+            <p>Impression Numérique Noir Recto</p>
+            <p>Impression Numérique Noir Recto Verso</p>
+            <p>Impression Numérique Couleurs Recto</p>
+            <p>Impression Numérique Couleurs Recto Verso</p>
+            <p>Impression Offset 1 Couleur Recto</p>
+            <p>Impression Offset 1 Couleur Recto/Verso</p>
+            <p>Impression Offset Couleurs Recto</p>
+            <p>Impression Offset Couleurs Recto Verso</p>
+            <h2>Couverture</h2>
+
+        </div>
 
     </div>
 

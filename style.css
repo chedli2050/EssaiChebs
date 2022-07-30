@@ -4,14 +4,14 @@ body{margin: 0%;padding: 0%;}
 /*Start Screen*/
 
 #startscreen{background-color: white;
-             display: flex;justify-content: center;flex-wrap: wrap;align-content:  center;
-             position: absolute;
-            z-index: 10001;
+             display: flex;justify-content: center;flex-wrap: wrap;align-content: center;align-items: center;
+             position: absolute;top: 0px;left: 0px;
+             z-index: 10001;
             
             }
     .logobaya
             {
-            display: inline-block;position: relative;top: 0px;left: 0%;
+            display: inline-block;position: relative;top: 0px;left: 0px;
             animation-name: testanime2;
             animation-duration: 0.9s;
             animation-timing-function: linear;
@@ -29,7 +29,7 @@ body{margin: 0%;padding: 0%;}
                        
     .logobayatexte
                 {
-                display: inline-block;position: relative;top: 0px;left: 0%;
+                display: inline-block;position: relative;top: 0px;left: 0px;
                 animation-name: testanime3;
                 animation-duration: 0.6s;
                 animation-timing-function: linear;
@@ -43,7 +43,7 @@ body{margin: 0%;padding: 0%;}
                 100% {left: 0px;}
         }
 
-    .boxappuyerici{width: 80%;text-align: center;margin-top: 50px;}
+    .boxappuyerici{width: 90%;text-align: center;margin-top: 50px;}
     .appuyerici
                 {
                     font-size: 14pt;font-weight: bold;font-family: Arial, Helvetica, sans-serif;
@@ -64,12 +64,19 @@ body{margin: 0%;padding: 0%;}
     
      /* --------------------------------Fin Start Screen---------------------------------------------------*/
 
-    #englobante{width: 0px;height: 0px;background-color: rgba(255, 0, 0, 0.346);position: fixed;bottom: 0px;left: 0px;
+    #englobante{width: 0px;height: 0px;background-color: rgba(0, 0, 0, 0.705);position: fixed;bottom: 0px;left: 0px;
                 z-index: 111;
                 }
-
-
-
+            #choiximp{width: 90%;height: 400px;position: absolute;bottom: 0px;left: 5%;
+                      background-color: black;box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.119);
+                      border-radius: 20px 20px 0 0;display: none;
+                     }
+            #choiximp p{color: white;text-align: center;font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bolder;margin-top: 10px;font-size: 12pt;
+                        }
+            #choiximp p:hover{font-size: 16pt;
+                            }
+                
 
      /*Menu*/
     body{background-image: url(photos/back.png);background-repeat: no-repeat;background-size: 100% 1400px;}
@@ -303,18 +310,60 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
             margin-left: 0px;padding: 0%;margin-top: 0px;
             background-color: rgba(255, 255, 255, 0.221);
             display: flex; justify-content: space-around;justify-items: center;align-content: center;
-            border-radius: 20px;        }
+            border-radius: 20px; }
         
-        .entrerquantitebn{width: 40%;text-align: left;}
-        .entrervolumebn{width: 40%;text-align: left;}
+        .entrerquantitebn{width: 30%;height: 80%;border-radius: 20px;position: relative;
+            top: 5px;background-color: coral;border: none;margin: 0;padding: 0;}
+           
+            #divinputquantite{display: inline-block;width: 200px;height: 100%;border: none;
+                background-color: white;margin: 0;padding: 0px;
+                border-bottom-right-radius: 20px;border-top-right-radius: 20px;
+                position: relative;top: -100%; left: 30px;
+                    }
+
+
+
+
+        .entrervolumebn{width: 30%;height: 80%;border-radius: 20px;position: relative;
+            top: 5px;background-color: ffc107;border: none;margin: 0;padding: 0;}
         
-        #qnb1, #qnb2 {width: 91%;height: 30px;background-color: rgba(255, 255, 255, 0.548);border-color: rgba(255, 255, 255, 0.154);
-                      font-size: 16pt;font-family: Arial; color: rgb(21, 83, 184);font-weight: bold;text-align: center;
-                      position: relative;top: 0px;border-radius: 15px;
+        
+        
+        .qv{display: block ;width: 30px;height: 100%;border: none;
+            background-color: #ffc107;margin: 0;padding: 0;
+            position: relative;top: 0px;left: 0px; box-shadow: 3px 0px 10px gray;
+            border-bottom-left-radius: 20px;border-top-left-radius: 20px; z-index: 103;}
+        
+            .sqv{position: relative;top: 50%;left: 50%;transform: translate(-50%,-50%);
+                display: inline-block;
+            margin: 0;padding: 0;border: none;
+            font-size: 16pt;text-align: center;font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;color: white;}
+       
+        #divinputvolume{display: inline-block;width: 200px;height: 100%;border: none;
+            background-color: white;margin: 0;padding: 0px;
+            border-bottom-right-radius: 20px;border-top-right-radius: 20px;
+            position: relative;top: -100%; left: 30px;
+                }
+        
+            
+        #qnb1, #qnb2 {width: 90%;height: 80%;background-color:white;
+                      font-size: 16pt;font-family: Arial; color: rgb(21, 83, 184);font-weight: bold;
+                      position: relative;top: 5px;left: 10px;outline: none;border: none;display: inline-block;
+                      border-bottom-right-radius: 20px;
+                      border-top-right-radius: 20px;
                      }
         
-        .titrebn2{text-align: center;margin: 0;padding: 0;font-family: Arial;font-size: 14pt;color: rgb(23, 85, 184);
-                  position: relative;top: 0px;font-weight: bold;margin-left: -6px;
+        #boutonchoiximpression{width: 30%;height: 80%;border-radius: 20px;position: relative;
+                        top: 5px; background-color: #ffc107;}
+                        .imprssionbnchoix{font-family: Arial, Helvetica, sans-serif;font-weight: bolder;
+                                        font-size: 12pt;display: inline-block;position: relative;
+                                        top: 50%; left: 50%;transform: translate(-50%,-50%);
+                                        color: white;text-shadow: 0px 0px 10px gray;}
+        #boutonchoiximpression:hover{box-shadow: 1px 1px 10px gray;}
+
+        .titrebn2{text-align: center;margin: 0;padding: 0;font-family: Arial;font-size: 12pt;color: rgba(23, 85, 184, 0.335);
+                  position: relative;top: 0px;font-weight: bold;margin-left:  8px;
                  }
         
         

@@ -9,6 +9,7 @@ startscreen.style.width = window.innerWidth +'px';
 startscreen.style.height = window.innerHeight + 'px';
 
 }
+
 ajustement()
 
 window.addEventListener("resize",ajustement);
@@ -826,7 +827,17 @@ function afficheecrandechoix1()
 englobante.style.width = innerWidth + "px";
 englobante.style.height = innerHeight + "px";
 controleecrandechoix = 1;
+choiximp.style.display = "block"
 }
+
+function fermeecrandechoix1()
+{
+englobante.style.width = "0px";
+englobante.style.height = "0px";
+controleecrandechoix = 0;
+choiximp.style.display = "none"
+}
+
 
 function redimentionner()
 {
@@ -840,6 +851,10 @@ function redimentionner()
 var f3=document.getElementById('f3');
 f3.addEventListener('dblclick',afficheecrandechoix1);
 window.addEventListener("resize",redimentionner);
+var boutonchoiximpression = document.getElementById('boutonchoiximpression');
+boutonchoiximpression.addEventListener('click',afficheecrandechoix1);
+englobante.addEventListener('click',fermeecrandechoix1);
+var choiximp = document.getElementById('choiximp');
 
 
 //---------------------------------------Fin Devis bloc notes------------------------------------
