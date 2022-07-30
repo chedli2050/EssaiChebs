@@ -68,15 +68,45 @@ body{margin: 0%;padding: 0%;}
                 z-index: 111;
                 }
             #choiximp{width: 90%;height: 400px;position: absolute;bottom: 0px;left: 5%;
-                      background-color: black;box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.119);
-                      border-radius: 20px 20px 0 0;display: none;
+                      background-color: rgba(0, 0, 0, 0.851);box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.119);
+                      border-radius: 20px 20px 0 0;padding: 0; margin: 0;border: none;
+                      display: none;justify-content: space-around;align-content: space-around;
                      }
-            #choiximp p{color: white;text-align: center;font-family: Arial, Helvetica, sans-serif;
-                        font-weight: bolder;margin-top: 10px;font-size: 12pt;
+            .photoschoix{width: 200px;height: 200px;display: inline-block;
+                position: relative;top: 10%;left: 50%;transform: translate(-50%,-50%);}
+      
+            #impcouvchoix{background-color: #ffc107;width: 50%;height: 100%;margin: 0;padding: 0;
+                          color: black;text-align: center;font-family: Arial, Helvetica, sans-serif;
+                          font-weight: bolder;margin-top: 10px;font-size: 16pt;
+                          position: relative;top: -2%;
+                          border-radius: 20px 0 0 0;border: none;
+                          display: flex;justify-content: center;align-content: center;flex-direction: column;
+                          transition: 0.2s;
+                         }            
+            #impintchoix{background-color: black;width: 50%;height: 100%;margin: 0;padding: 0;
+                        color: white;text-align: center;font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bolder;margin-top: 10px;font-size: 16pt;
+                        position: relative;top: -2%;
+                        border-radius: 0 20px 0 0px;border: none;
+                        display: flex;justify-content: center;align-content: center;flex-direction: column;          
+                        transition: 0.2s;
                         }
-            #choiximp p:hover{font-size: 16pt;
-                            }
-                
+            .impcouvchoix0{transform: scale(1);}
+            .impcouvchoix0.opaque {transform: scale(0);}
+
+            .impcouvchoix1{transform: scale(0);}
+            .impcouvchoix1.opaque {transform: scale(1);}
+
+            .impintchoix0{transform: scale(1);}
+            .impintchoix0.opaque{transform: scale(0);}
+            
+            .impintchoix1{transform: scale(0);}
+            .impintchoix1.opaque{transform: scale(1);}
+
+            
+
+
+
 
      /*Menu*/
     body{background-image: url(photos/back.png);background-repeat: no-repeat;background-size: 100% 1400px;}
