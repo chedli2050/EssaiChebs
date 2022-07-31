@@ -879,6 +879,7 @@ function choixint()
     impintchoix.className = 'impintchoix2';
     impintchoix.style.backgroundColor = "#ffc107";
     spanint.innerHTML='<i class="fa-solid fa-circle-check"></i> Impression intérieur';
+    spanint.style.color = 'black'
     leschoixcouv.className = 'leschoixcouv0';
     leschoixint.className = 'leschoixint1';
 }
@@ -893,6 +894,7 @@ impintchoix.className = 'impintchoix0';
 spancouv.innerHTML = 'Impression Couverture';
 spanint.innerHTML = 'Impression intérieur';
 impintchoix.style.backgroundColor = "black";
+spanint.style.color = 'white'
 leschoixcouv.className = 'leschoixcouv0';
 leschoixint.className = 'leschoixint0';
 choiximp.style.display = "none"

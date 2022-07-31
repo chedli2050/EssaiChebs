@@ -110,7 +110,7 @@ body{margin: 0%;padding: 0%;}
             #leschoixcouv{background-color: rgba(0, 0, 0, 0);width: 50%;height: 100%;margin: 0;padding: 0;
                 color: white;text-align: center;font-family: Arial, Helvetica, sans-serif;
                 font-weight: bolder;margin-top: 10px;font-size: 16pt;
-                position: absolute;top: -2%;left: 50%;
+                position: absolute;top: -2%;left: 48%;
                 border-radius: 0 20px 0 0px;border: none;user-select: none;
                 display: flex;align-content: space-around;flex-direction: column; justify-content: space-around;         
                 transition: 0.2s;}
@@ -132,7 +132,7 @@ body{margin: 0%;padding: 0%;}
             #leschoixint{background-color: rgba(0, 0, 0, 0);width: 50%;height: 100%;margin: 0;padding: 0;
                     color: white;text-align: center;font-family: Arial, Helvetica, sans-serif;
                     font-weight: bolder;margin-top: 10px;font-size: 16pt;
-                    position: absolute;top: -2%;left: 50%;
+                    position: absolute;top: -2%;left: 48%;
                     border-radius: 0 20px 0 0px;border: none;user-select: none;
                     display: flex;align-content: space-around;flex-direction: column; justify-content: space-around;         
                     transition: 0.2s;}
