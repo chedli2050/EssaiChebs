@@ -115,7 +115,10 @@ body{margin: 0%;padding: 0%;}
                 display: flex;align-content: space-around;flex-direction: column; justify-content: space-around;         
                 transition: 0.2s;}
 
-            #leschoixcouv h2 {color: gray;margin: 10px;}
+            #leschoixcouv h2 {color: gray;margin-top: 10px;margin-bottom: 10px;
+                             width: 80%;font-size: 18pt;margin-left:10px;margin-right: 0px;text-align: left;
+                             position: relative;left: 10%;
+                             }
             #leschoixcouv p {color: white;margin: 10px;width: 80%;height: 30px;padding-top: 5px;border-radius: 10px;
                              border: 1px solid white;position: relative;left: 10%;}
             #leschoixcouv p:hover {color: white;margin: 10px;width: 80%;height: 30px;padding-top: 5px;border-radius: 10px;
@@ -137,7 +140,8 @@ body{margin: 0%;padding: 0%;}
                     display: flex;align-content: space-around;flex-direction: column; justify-content: space-around;         
                     transition: 0.2s;}
     
-            #leschoixint h2 {color: gray;margin: 5px;font-size: 12pt;}
+            #leschoixint h2 {color: gray;margin: 5px;font-size: 12pt;width: 80%;text-align: left;
+                             position: relative;left: 10%;}
             #leschoixint p {color: white;margin: 5px;width: 80%;height: 30px;padding-top: 5px;border-radius: 10px;
                                  border: 1px solid white;position: relative;left: 10%;}
             #leschoixint p:hover {color: white;margin: 5px;width: 80%;height: 30px;padding-top: 5px;border-radius: 10px;
@@ -529,7 +533,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
 
 
 
-.boximpression{display: flex;flex-wrap: wrap;justify-content: center;}
+.boximpression{display: none;flex-wrap: wrap;justify-content: center;}
 .impressioninterieurblocnotes{background-color: rgba(255, 255, 255, 0.179);
                              width: 37%;margin-left: 5px;margin-right: 5px;
                              border-radius: 10px;
@@ -969,7 +973,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
     display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;margin-top: 5px;}
 
 
-.boximpression{display: flex;justify-content: center;}
+.boximpression{display: none;justify-content: center;}
 .impressioninterieurblocnotes{width: 38%;}
 .impressioncouvertureblocnotes{width: 38%;}
 #impressionint{width: 100%;}
@@ -997,7 +1001,7 @@ font-weight: bold;color: rgb(23, 85, 184);font-size: 14pt;}
     background-size: contain; background-repeat: no-repeat; background-position: center; }    
 
 
-
+    .photoschoix{width: 150px;height: 150px;}
   
 
 

@@ -900,5 +900,116 @@ leschoixint.className = 'leschoixint0';
 choiximp.style.display = "none"
 }
 
+var couv1 = document.getElementById('couv1');
+var couv2 = document.getElementById('couv2');
+var couv3 = document.getElementById('couv3');
+var couv4 = document.getElementById('couv4');
+
+var int1 = document.getElementById('int1');
+var int2 = document.getElementById('int2');
+var int3 = document.getElementById('int3');
+var int4 = document.getElementById('int4');
+var int5 = document.getElementById('int5');
+var int6 = document.getElementById('int6');
+var int7 = document.getElementById('int7');
+var int8 = document.getElementById('int8');
+
+var impressioncouvselect = document.getElementById('impressioncouv');
+
+function couv1selector(){
+    impressioncouvselect.value = "1";
+}
+function couv2selector(){
+    impressioncouvselect.value = "2";
+}
+function couv3selector(){
+    impressioncouvselect.value = "3";
+}
+function couv4selector(){
+    impressioncouvselect.value = "4";
+}
+
+couv1.addEventListener('click',couv1selector);
+couv1.addEventListener('click',resultatbn);
+couv1.addEventListener('click',fermeecrandechoix1);
+
+
+couv2.addEventListener('click',couv2selector);
+couv2.addEventListener('click',resultatbn);
+couv2.addEventListener('click',fermeecrandechoix1);
+
+
+couv3.addEventListener('click',couv3selector);
+couv3.addEventListener('click',resultatbn);
+couv3.addEventListener('click',fermeecrandechoix1);
+
+
+couv4.addEventListener('click',couv4selector);
+couv4.addEventListener('click',resultatbn);
+couv4.addEventListener('click',fermeecrandechoix1);
+
+var impressionintselect = document.getElementById('impressionint');
+
+function int1selector(){
+    impressionintselect.value = "1";
+}
+function int2selector(){
+    impressionintselect.value = "2";
+}
+function int3selector(){
+    impressionintselect.value = "3";
+}
+function int4selector(){
+    impressionintselect.value = "4";
+}
+function int5selector(){
+    impressionintselect.value = "5";
+}
+function int6selector(){
+    impressionintselect.value = "6";
+}
+function int7selector(){
+    impressionintselect.value = "7";
+}
+function int8selector(){
+    impressionintselect.value = "8";
+}
+
+int1.addEventListener('click',int1selector);
+int1.addEventListener('click',resultatbn);
+int1.addEventListener('click',fermeecrandechoix1);
+
+int2.addEventListener('click',int2selector);
+int2.addEventListener('click',resultatbn);
+int2.addEventListener('click',fermeecrandechoix1);
+
+int3.addEventListener('click',int3selector);
+int3.addEventListener('click',resultatbn);
+int3.addEventListener('click',fermeecrandechoix1);
+
+int4.addEventListener('click',int4selector);
+int4.addEventListener('click',resultatbn);
+int4.addEventListener('click',fermeecrandechoix1);
+
+int5.addEventListener('click',int5selector);
+int5.addEventListener('click',resultatbn);
+int5.addEventListener('click',fermeecrandechoix1);
+
+int6.addEventListener('click',int6selector);
+int6.addEventListener('click',resultatbn);
+int6.addEventListener('click',fermeecrandechoix1);
+
+int7.addEventListener('click',int7selector);
+int7.addEventListener('click',resultatbn);
+int7.addEventListener('click',fermeecrandechoix1);
+
+int8.addEventListener('click',int8selector);
+int8.addEventListener('click',resultatbn);
+int8.addEventListener('click',fermeecrandechoix1);
+
+
+
+
+
 
 //---------------------------------------Fin Devis bloc notes------------------------------------
