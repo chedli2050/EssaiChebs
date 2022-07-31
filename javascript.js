@@ -343,7 +343,7 @@ function resultatbn(){
                                 labelradio1.style.opacity = "1"
                                 
                                 labelradio2.innerHTML = 'Format A4'
-                                labelradio2.style.backgroundColor="rgba(7, 117, 115, 0)"
+                                labelradio2.style.backgroundColor="rgba(255, 255, 255, 0.247)"
                                 labelradio2.style.color ="rgba(7, 117, 115, 0.905)"
                                 labelradio2.style.opacity = "0.5"
 
@@ -355,7 +355,7 @@ function resultatbn(){
                                 labelradio2.style.opacity="1"
                                 
                                 labelradio1.innerHTML = 'Format A5'
-                                labelradio1.style.backgroundColor="rgba(7, 117, 115, 0)"
+                                labelradio1.style.backgroundColor="rgba(255, 255, 255, 0.247)"
                                 labelradio1.style.color ="rgba(7, 117, 115, 0.905)"
                                 labelradio1.style.opacity="0.5"
                                 
@@ -376,13 +376,13 @@ function resultatbn(){
            
            
             labelspirale.innerHTML = 'Spirales côté'
-            labelspirale.style.backgroundColor="rgba(221, 255, 184, 0)"
+            labelspirale.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelspirale.style.color = "rgb(244, 81, 30)"
             labelspirale.style.opacity="0.5"
             
            
             labelspiralehaut.innerHTML = 'Spirales Haut'
-            labelspiralehaut.style.backgroundColor="rgba(221, 255, 184, 0)"
+            labelspiralehaut.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelspiralehaut.style.color = "rgb(244, 81, 30)"
             labelspiralehaut.style.opacity="0.5"
 
@@ -401,7 +401,7 @@ function resultatbn(){
         if (spirale === true)
         {
             labeldos.innerHTML = 'Dos Collé'
-            labeldos.style.backgroundColor="rgba(221, 255, 184, 0)"
+            labeldos.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labeldos.style.color ="rgb(244, 81, 30)"
             labeldos.style.opacity="0.5"
 
@@ -411,7 +411,7 @@ function resultatbn(){
             labelspirale.style.opacity="1"
 
             labelspiralehaut.innerHTML = 'Spirales Haut'
-            labelspiralehaut.style.backgroundColor="rgba(221, 255, 184, 0)"
+            labelspiralehaut.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelspiralehaut.style.color ="rgb(244, 81, 30)"
             labelspiralehaut.style.opacity="0.5"
 
@@ -425,12 +425,12 @@ function resultatbn(){
         if (spiralehaut === true)
         {
             labeldos.innerHTML = 'Dos Collé'
-            labeldos.style.backgroundColor="rgba(221, 255, 184, 0)"
+            labeldos.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labeldos.style.color ="rgb(244, 81, 30)"
             labeldos.style.opacity="0.5"
 
             labelspirale.innerHTML = 'Spirales côté'
-            labelspirale.style.backgroundColor="rgba(221, 255, 184, 0)"
+            labelspirale.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelspirale.style.color ="rgb(244, 81, 30)"
             labelspirale.style.opacity="0.5"
 
@@ -514,17 +514,17 @@ function resultatbn(){
             labelsans.style.opacity="1"
             
             labelr.innerHTML = 'Pélliculage R'
-            labelr.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelr.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelr.style.color ="rgba(13, 128, 190, 0.961)"
             labelr.style.opacity="0.5"
             
             labelrv.innerHTML = 'Pélliculage RV'
-            labelrv.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelrv.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelrv.style.color ="rgba(13, 128, 190, 0.961)"
             labelrv.style.opacity="0.5"
 
             labelcontre.innerHTML = 'Contre Collé'
-            labelcontre.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelcontre.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelcontre.style.color ="rgba(13, 128, 190, 0.961)"
             labelcontre.style.opacity="0.5"
 
@@ -533,7 +533,7 @@ function resultatbn(){
         if (checkboxpelr === true)
         {
             labelsans.innerHTML = 'Sans Pélli.'
-            labelsans.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelsans.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelsans.style.color ="rgba(13, 128, 190, 0.961)"
             labelsans.style.opacity="0.5"
             
@@ -543,12 +543,12 @@ function resultatbn(){
             labelr.style.opacity="1"
             
             labelrv.innerHTML = 'Pélliculage RV'
-            labelrv.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelrv.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelrv.style.color ="rgba(13, 128, 190, 0.961)"
             labelrv.style.opacity="0.5"
 
             labelcontre.innerHTML = 'Contre Collé'
-            labelcontre.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelcontre.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelcontre.style.color ="rgba(13, 128, 190, 0.961)"
             labelcontre.style.opacity="0.5"
         
@@ -557,13 +557,13 @@ function resultatbn(){
         if (checkboxpelrv === true)
         {
             labelsans.innerHTML = 'Sans Pélli.'
-            labelsans.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelsans.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelsans.style.color ="rgba(13, 128, 190, 0.961)"
             labelsans.style.opacity="0.5"
             
             
             labelr.innerHTML = 'Pélliculage R'
-            labelr.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelr.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelr.style.color ="rgba(13, 128, 190, 0.961)"
             labelr.style.opacity="0.5"
             
@@ -573,7 +573,7 @@ function resultatbn(){
             labelrv.style.opacity="1"
 
             labelcontre.innerHTML = 'Contre Collé'
-            labelcontre.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelcontre.style.backgroundColor="rgba(255, 255, 255, 0.247))"
             labelcontre.style.color ="rgba(13, 128, 190, 0.961)"
             labelcontre.style.opacity="0.5"
         
@@ -582,17 +582,17 @@ function resultatbn(){
         if (checkboxcontre === true)
         {
             labelsans.innerHTML = 'Sans Pélli.'
-            labelsans.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelsans.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelsans.style.color ="rgba(13, 128, 190, 0.961)"
             labelsans.style.opacity="0.5"
             
             labelr.innerHTML = 'Pélliculage R'
-            labelr.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelr.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelr.style.color ="rgba(13, 128, 190, 0.961)"
             labelr.style.opacity="0.5"
             
             labelrv.innerHTML = 'Pélliculage RV'
-            labelrv.style.backgroundColor="rgba(13, 128, 190, 0)"
+            labelrv.style.backgroundColor="rgba(255, 255, 255, 0.247)"
             labelrv.style.color ="rgba(13, 128, 190, 0.961)"
             labelrv.style.opacity="0.5"
 
