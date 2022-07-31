@@ -1042,7 +1042,8 @@ display: inline-block;text-align: center;margin-left: 5px;margin-right: 5px;marg
 /* Box Devis Responsive Screen Mobile*/
 
 .boxa4a5, .boxspiralehautdos, .pelliculagecontrecollage{width: 100%;left: 0px;}
-#divinputquantite{width: 180px}
+#divinputquantite{width: 160px;}
+#divinputvolume{width: 160px;}
 
 #labelradio1{border: 3px solid rgba(7, 117, 115, 0.905);font-size: 12pt; font-weight: bold;padding: 5px;
              background-color: rgba(7, 117, 115, 0.905);color: white;width: 38%;border-radius: 20px;
