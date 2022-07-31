@@ -67,21 +67,22 @@ body{margin: 0%;padding: 0%;}
     #englobante{width: 0px;height: 0px;background-color: rgba(0, 0, 0, 0.705);position: fixed;bottom: 0px;left: 0px;
                 z-index: 111;
                 }
+            #englobanteretour{position: absolute;width: 100%;height: 100%;top: 0px;left: 0px;background-color: #ffffff1c;}    
             #choiximp{width: 90%;height: 400px;position: absolute;bottom: 0px;left: 5%;
                       background-color: rgba(0, 0, 0, 0.851);box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.119);
                       border-radius: 20px 20px 0 0;padding: 0; margin: 0;border: none;
                       display: none;justify-content: space-around;align-content: space-around;
                      }
-            .photoschoix{width: 200px;height: 200px;display: inline-block;
+            .photoschoix{width: 180px;height: 180px;display: inline-block;
                 position: relative;top: 10%;left: 50%;transform: translate(-50%,-50%);}
       
             #impcouvchoix{background-color: #ffc107;width: 50%;height: 100%;margin: 0;padding: 0;
                           color: black;text-align: center;font-family: Arial, Helvetica, sans-serif;
                           font-weight: bolder;margin-top: 10px;font-size: 16pt;
-                          position: relative;top: -2%;
+                          position: relative;top: -2.5%;
                           border-radius: 20px 0 0 0;border: none;
                           display: flex;justify-content: center;align-content: center;flex-direction: column;
-                          transition: 0.2s;
+                          transition: 0.2s;user-select: none;
                          }            
             #impintchoix{background-color: black;width: 50%;height: 100%;margin: 0;padding: 0;
                         color: white;text-align: center;font-family: Arial, Helvetica, sans-serif;
@@ -89,7 +90,7 @@ body{margin: 0%;padding: 0%;}
                         position: relative;top: -2%;
                         border-radius: 0 20px 0 0px;border: none;
                         display: flex;justify-content: center;align-content: center;flex-direction: column;          
-                        transition: 0.2s;
+                        transition: 0.2s;user-select: none;
                         }
             .impcouvchoix0{transform: scale(1);}
             .impcouvchoix0.opaque {transform: scale(0);}
@@ -97,13 +98,72 @@ body{margin: 0%;padding: 0%;}
             .impcouvchoix1{transform: scale(0);}
             .impcouvchoix1.opaque {transform: scale(1);}
 
-            .impintchoix0{transform: scale(1);}
+            .impintchoix0{transform: scale(1);background-color: black}
             .impintchoix0.opaque{transform: scale(0);}
             
             .impintchoix1{transform: scale(0);}
             .impintchoix1.opaque{transform: scale(1);}
 
+            .impintchoix2{background-color: #ffc107;transform: scale(0.7);transform: translate(-100%,0);}
+            .impintchoix2.opaque{transform: scale(0);}
             
+            #leschoixcouv{background-color: rgba(0, 0, 0, 0);width: 50%;height: 100%;margin: 0;padding: 0;
+                color: white;text-align: center;font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;margin-top: 10px;font-size: 16pt;
+                position: absolute;top: -2%;left: 50%;
+                border-radius: 0 20px 0 0px;border: none;user-select: none;
+                display: flex;align-content: space-around;flex-direction: column; justify-content: space-around;         
+                transition: 0.2s;}
+
+            #leschoixcouv h2 {color: gray;margin: 10px;}
+            #leschoixcouv p {color: white;margin: 10px;width: 80%;height: 30px;padding-top: 5px;border-radius: 10px;
+                             border: 1px solid white;position: relative;left: 10%;}
+            #leschoixcouv p:hover {color: white;margin: 10px;width: 80%;height: 30px;padding-top: 5px;border-radius: 10px;
+                             border: 1px solid white;background-color:#ffc107;
+                             position: relative;left: 10%;}
+
+            .leschoixcouv0{transform: scale(0);}
+            .leschoixcouv0.opaque{transform: scale(1);}
+            .leschoixcouv1{transform: scale(1);}
+            .leschoixcouv1.opaque{transform: scale(0);}
+
+
+                /*les choix int*/
+            #leschoixint{background-color: rgba(0, 0, 0, 0);width: 50%;height: 100%;margin: 0;padding: 0;
+                    color: white;text-align: center;font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bolder;margin-top: 10px;font-size: 16pt;
+                    position: absolute;top: -2%;left: 50%;
+                    border-radius: 0 20px 0 0px;border: none;user-select: none;
+                    display: flex;align-content: space-around;flex-direction: column; justify-content: space-around;         
+                    transition: 0.2s;}
+    
+            #leschoixint h2 {color: gray;margin: 5px;font-size: 12pt;}
+            #leschoixint p {color: white;margin: 5px;width: 80%;height: 30px;padding-top: 5px;border-radius: 10px;
+                                 border: 1px solid white;position: relative;left: 10%;}
+            #leschoixint p:hover {color: white;margin: 5px;width: 80%;height: 30px;padding-top: 5px;border-radius: 10px;
+                                 border: 1px solid white;background-color:#ffc107;
+                                 position: relative;left: 10%;}
+    
+            .leschoixint0{transform: scale(0);}
+            .leschoixint0.opaque{transform: scale(1);}
+            .leschoixint1{transform: scale(1);}
+            .leschoixint1.opaque{transform: scale(0);} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -822,22 +822,6 @@ checkboxcontrechange.addEventListener('keyup',resultatbn);
 
 var englobante = document.getElementById('englobante');
 var controleecrandechoix = 0;
-function afficheecrandechoix1()
-{
-englobante.style.width = innerWidth + "px";
-englobante.style.height = innerHeight + "px";
-controleecrandechoix = 1;
-choiximp.style.display = "flex"
-}
-
-function fermeecrandechoix1()
-{
-englobante.style.width = "0px";
-englobante.style.height = "0px";
-controleecrandechoix = 0;
-choiximp.style.display = "none"
-}
-
 
 function redimentionner()
 {
@@ -850,11 +834,12 @@ function redimentionner()
 
 
 window.addEventListener("resize",redimentionner);
+var englobanteretour = document.getElementById('englobanteretour');
+englobanteretour.addEventListener('click',fermeecrandechoix1);
 
 var boutonchoiximpression = document.getElementById('boutonchoiximpression');
 boutonchoiximpression.addEventListener('click',afficheecrandechoix1);
 
-// englobante.addEventListener('click',fermeecrandechoix1);
 
 var choiximp = document.getElementById('choiximp');
 
@@ -862,14 +847,56 @@ var impcouvchoix = document.getElementById('impcouvchoix');
 var impintchoix = document.getElementById('impintchoix');
 
 impcouvchoix.addEventListener('click',choixcouv);
-function choixcouv(){
-    impcouvchoix.className = 'impcouvchoix1';
-    impintchoix.className = 'impintchoix1';
+impintchoix.addEventListener('click',choixint);
 
-   
+var spancouv = document.getElementById('spancouv');
+var spanint = document.getElementById('spanint');
+
+var leschoixcouv = document.getElementById('leschoixcouv');
+var leschoixint = document.getElementById('leschoixint');
+
+
+function afficheecrandechoix1()
+{
+englobante.style.width = innerWidth + "px";
+englobante.style.height = innerHeight + "px";
+controleecrandechoix = 1;
+choiximp.style.display = "flex"
 }
 
+function choixcouv()
+{
+    impcouvchoix.className = 'impcouvchoix0';
+    impintchoix.className = 'impintchoix1';
+    spancouv.innerHTML='<i class="fa-solid fa-circle-check"></i> Impression Couverture';
+    leschoixcouv.className = 'leschoixcouv1';
+    leschoixint.className = 'leschoixint0';
+}
 
+function choixint()
+{
+    impcouvchoix.className = 'impcouvchoix1';
+    impintchoix.className = 'impintchoix2';
+    impintchoix.style.backgroundColor = "#ffc107";
+    spanint.innerHTML='<i class="fa-solid fa-circle-check"></i> Impression intérieur';
+    leschoixcouv.className = 'leschoixcouv0';
+    leschoixint.className = 'leschoixint1';
+}
+
+function fermeecrandechoix1()
+{
+englobante.style.width = "0px";
+englobante.style.height = "0px";
+controleecrandechoix = 0;
+impcouvchoix.className = 'impcouvchoix0';
+impintchoix.className = 'impintchoix0';
+spancouv.innerHTML = 'Impression Couverture';
+spanint.innerHTML = 'Impression intérieur';
+impintchoix.style.backgroundColor = "black";
+leschoixcouv.className = 'leschoixcouv0';
+leschoixint.className = 'leschoixint0';
+choiximp.style.display = "none"
+}
 
 
 //---------------------------------------Fin Devis bloc notes------------------------------------
